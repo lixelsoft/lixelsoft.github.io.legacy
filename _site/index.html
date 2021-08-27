@@ -35,7 +35,7 @@
 <meta property="twitter:title" content="Lixelsoft" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"url":"https://lixelsoft.github.io/","name":"Lixelsoft","author":{"@type":"Person","name":"Lixelsoft"},"description":"Lixelsoft Tech Blog","headline":"Lixelsoft","@type":"WebSite","sameAs":["https://github.com/Lixelsoft"],"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Lixelsoft"},"url":"https://lixelsoft.github.io/","name":"Lixelsoft","headline":"Lixelsoft","sameAs":["https://github.com/Lixelsoft"],"description":"Lixelsoft Tech Blog","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -365,6 +365,172 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/unity-memo-inputfield/">InputField TouchScreenKeyboard Done Event 처리</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다.
+여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.
+
+
+
+InputField의 Inspector창에서 Hide Soft Keyboard, Hide Mobile Input을 체크해준다.
+
+
+
+  
+    if (_keyboard =...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Fri, Aug 27, 2021, 10:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 27
+  
+
+  <i class="unloaded">2021-08-27T10:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="245 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/unity-memo/">앱에서 다른 앱 실행하기 (with 변수 전달)</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Sender App
+
+
+  
+      public void SenderApp() {
+    AndroidJavaClass UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+    AndroidJavaObject currentActivity = jc.GetStatic&lt;An...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Fri, Aug 27, 2021, 12:03 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 27
+  
+
+  <i class="unloaded">2021-08-27T00:03:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="105 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/unity-processdiagnostics/">Process 실행 시간 확인</a>
     </h1>
 
@@ -376,15 +542,7 @@
 
 
 
-        Source Code
-
-
-
-  ProcessDiagnostics.cs
-
-
-
-
+        
   
     using System.Diagnostics;
 
@@ -392,8 +550,10 @@ namespace lixelsoft {
   public class Test {
 
     public void ProcessDiagnostics() {
-      // using System.Diagnostics;
- ...
+      Stopwatch SW = new Stopwatch();
+      SW.Start();
+      float t = 1;
+   ...
       </p>
     </div>
 
@@ -440,7 +600,7 @@ namespace lixelsoft {
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="76 words">1 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="68 words">1 min</span>
 
 
         <!-- page views -->
@@ -581,6 +741,16 @@ namespace lixelsoft {
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -590,8 +760,15 @@ namespace lixelsoft {
     
     
     
-      
+  
     
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -610,10 +787,13 @@ namespace lixelsoft {
 
       
         
-        <a class="post-tag" href="/tags/c/">c#</a>
+        <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/unity/">unity</a>
+        <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/c/">c#</a>
       
 
       </div>
@@ -704,6 +884,30 @@ namespace lixelsoft {
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -714,24 +918,20 @@ namespace lixelsoft {
     
     
       
-    
-  
-    
-    
-    
-    
-      
         
         
 
 
 
-      
-        
-        <a class="post-tag" href="/tags/c/">c#</a>
       
         
         <a class="post-tag" href="/tags/unity/">unity</a>
+      
+        
+        <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/c/">c#</a>
       
 
     </div>

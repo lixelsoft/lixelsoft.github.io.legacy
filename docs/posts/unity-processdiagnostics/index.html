@@ -26,8 +26,8 @@
 <meta property="og:title" content="Process 실행 시간 확인" />
 <meta name="author" content="Lixelsoft" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Source Code" />
-<meta property="og:description" content="Source Code" />
+<meta name="description" content="```cs using System.Diagnostics;" />
+<meta property="og:description" content="```cs using System.Diagnostics;" />
 <link rel="canonical" href="https://lixelsoft.github.io/posts/unity-processdiagnostics/" />
 <meta property="og:url" content="https://lixelsoft.github.io/posts/unity-processdiagnostics/" />
 <meta property="og:site_name" content="Lixelsoft" />
@@ -37,7 +37,7 @@
 <meta property="twitter:title" content="Process 실행 시간 확인" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-processdiagnostics/"},"url":"https://lixelsoft.github.io/posts/unity-processdiagnostics/","author":{"@type":"Person","name":"Lixelsoft"},"description":"Source Code","dateModified":"2021-08-27T10:16:13+09:00","datePublished":"2021-08-26T05:17:00+09:00","headline":"Process 실행 시간 확인","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-processdiagnostics/","headline":"Process 실행 시간 확인","dateModified":"2021-08-27T10:16:13+09:00","datePublished":"2021-08-26T05:17:00+09:00","description":"```cs using System.Diagnostics;","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-processdiagnostics/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -434,7 +434,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="76 words">1 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="68 words">1 min</span>
 
 
           <!-- page views -->
@@ -452,15 +452,7 @@
 
         
 
-        <h1 id="source-code">Source Code</h1>
-
-<!-- <details> -->
-<summary> 
-ProcessDiagnostics.cs
-</summary>
-<p><br /></p>
-
-<div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+        <div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -479,14 +471,12 @@ ProcessDiagnostics.cs
 17
 18
 19
-20
 </pre></td><td class="rouge-code"><pre><span class="k">using</span> <span class="nn">System.Diagnostics</span><span class="p">;</span>
 
 <span class="k">namespace</span> <span class="nn">lixelsoft</span> <span class="p">{</span>
   <span class="k">public</span> <span class="k">class</span> <span class="nc">Test</span> <span class="p">{</span>
 
     <span class="k">public</span> <span class="k">void</span> <span class="nf">ProcessDiagnostics</span><span class="p">()</span> <span class="p">{</span>
-      <span class="c1">// using System.Diagnostics;</span>
       <span class="n">Stopwatch</span> <span class="n">SW</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Stopwatch</span><span class="p">();</span>
       <span class="n">SW</span><span class="p">.</span><span class="nf">Start</span><span class="p">();</span>
       <span class="kt">float</span> <span class="n">t</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
@@ -495,7 +485,7 @@ ProcessDiagnostics.cs
         <span class="kt">float</span> <span class="n">r</span> <span class="p">=</span> <span class="n">t</span> <span class="p">*</span> <span class="n">k</span><span class="p">;</span>
       <span class="p">}</span>
       <span class="n">SW</span><span class="p">.</span><span class="nf">Stop</span><span class="p">();</span>
-      <span class="n">UnityEngine</span><span class="p">.</span><span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"&lt;color=lime&gt;[LIXELSOFT]&lt;/color&gt; float Result: </span><span class="p">{</span><span class="n">SW</span><span class="p">.</span><span class="n">Elapsed</span><span class="p">.</span><span class="nf">ToString</span><span class="p">()}</span><span class="s">"</span><span class="p">);</span>
+      <span class="n">UnityEngine</span><span class="p">.</span><span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"&lt;color=lime&gt; Result: </span><span class="p">{</span><span class="n">SW</span><span class="p">.</span><span class="n">Elapsed</span><span class="p">.</span><span class="nf">ToString</span><span class="p">()}</span><span class="s">&lt;/color&gt;"</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
 
@@ -503,8 +493,6 @@ ProcessDiagnostics.cs
 </pre></td></tr></tbody></table></code></div></div>
 
 <!-- </details> -->
-
-<p><br /></p>
 
 <!-- 
 # References
@@ -521,8 +509,8 @@ ProcessDiagnostics.cs
         <div class="post-meta mb-3">
           <i class="far fa-folder-open fa-fw mr-1"></i>
           
-            <a href='/categories/c/'>c#</a>,
-            <a href='/categories/memo/'>Memo</a>
+            <a href='/categories/unity/'>Unity</a>,
+            <a href='/categories/unity-memo/'>Unity Memo</a>
         </div>
         
 
@@ -534,8 +522,8 @@ ProcessDiagnostics.cs
           <a href="/tags/unity/"
             class="post-tag no-text-decoration" >unity</a>
           
-          <a href="/tags/c/"
-            class="post-tag no-text-decoration" >c#</a>
+          <a href="/tags/csharp/"
+            class="post-tag no-text-decoration" >csharp</a>
           
           </div>
         
@@ -671,6 +659,16 @@ ProcessDiagnostics.cs
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -680,8 +678,15 @@ ProcessDiagnostics.cs
     
     
     
-      
+  
     
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -700,10 +705,13 @@ ProcessDiagnostics.cs
 
       
         
-        <a class="post-tag" href="/tags/c/">c#</a>
+        <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/unity/">unity</a>
+        <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/c/">c#</a>
       
 
       </div>
@@ -750,6 +758,32 @@ ProcessDiagnostics.cs
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
 
 
@@ -765,11 +799,141 @@ ProcessDiagnostics.cs
   
     
     
+      
+      
+    
+  
+    
+    
+      
+      
+    
+  
+    
+    
   
 
 
 
 
+
+  <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+    <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3>
+    <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/unity-memo/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Aug 27
+  
+
+  <i class="unloaded">2021-08-27T00:03:00+09:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>앱에서 다른 앱 실행하기 (with 변수 전달)</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Sender App
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+  public void SenderApp() {
+    AndroidJavaClass UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+    AndroidJavaObject currentActivity = jc...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/unity-memo-inputfield/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Aug 27
+  
+
+  <i class="unloaded">2021-08-27T10:00:00+09:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>InputField TouchScreenKeyboard Done Event 처리</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다.
+여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.
+
+
+
+InputField의 Inspector창에서 Hide Soft Keyboard, Hide Mobile Input을 체크해준다.
+
+
+1
+2
+3
+4
+if (_keyboard =...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+    </div> <!-- .card-deck -->
+  </div> <!-- #related-posts -->
 
 
 
@@ -790,9 +954,9 @@ ProcessDiagnostics.cs
   
 
   
-  <span class="btn btn-outline-primary disabled">
-    <p>-</p>
-  </span>
+  <a href="/posts/unity-memo/" class="btn btn-outline-primary">
+    <p>앱에서 다른 앱 실행하기 (with 변수 전달)</p>
+  </a>
   
 
 </div>
@@ -879,6 +1043,30 @@ ProcessDiagnostics.cs
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -889,24 +1077,20 @@ ProcessDiagnostics.cs
     
     
       
-    
-  
-    
-    
-    
-    
-      
         
         
 
 
 
-      
-        
-        <a class="post-tag" href="/tags/c/">c#</a>
       
         
         <a class="post-tag" href="/tags/unity/">unity</a>
+      
+        
+        <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/c/">c#</a>
       
 
     </div>

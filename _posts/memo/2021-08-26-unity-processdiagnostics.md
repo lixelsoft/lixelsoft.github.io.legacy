@@ -2,22 +2,13 @@
 title: Process 실행 시간 확인
 author: Lixelsoft
 date: 2021-08-26 05:17:00 +09:00
-categories: [c#, Memo]
-tags: [unity, c#]
+categories: [Unity, Unity Memo]
+tags: [unity, csharp]
 math: true
 mermaid: true
 
 
 ---
-# Source Code
-
-
-<!-- <details> -->
-<summary markdown="span"> 
-ProcessDiagnostics.cs
-</summary>
-<br>
-
 ```cs
 using System.Diagnostics;
 
@@ -25,7 +16,6 @@ namespace lixelsoft {
   public class Test {
 
     public void ProcessDiagnostics() {
-      // using System.Diagnostics;
       Stopwatch SW = new Stopwatch();
       SW.Start();
       float t = 1;
@@ -34,7 +24,7 @@ namespace lixelsoft {
         float r = t * k;
       }
       SW.Stop();
-      UnityEngine.Debug.Log($"<color=lime>[LIXELSOFT]</color> float Result: {SW.Elapsed.ToString()}");
+      UnityEngine.Debug.Log($"<color=lime> Result: {SW.Elapsed.ToString()}</color>");
     }
   }
 
@@ -43,7 +33,6 @@ namespace lixelsoft {
 
 <!-- </details> -->
 
-<br>
 
 <!-- 
 # References

@@ -23,25 +23,25 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Process 실행 시간 확인" />
-<meta name="author" content="Lixelsoft" />
+<meta property="og:title" content="InputField TouchScreenKeyboard Done Event 처리" />
+<meta name="author" content="lixelsoft" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="```cs using System.Diagnostics;" />
-<meta property="og:description" content="```cs using System.Diagnostics;" />
-<link rel="canonical" href="https://lixelsoft.github.io/posts/unity-processdiagnostics/" />
-<meta property="og:url" content="https://lixelsoft.github.io/posts/unity-processdiagnostics/" />
+<meta name="description" content="Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다. 여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다." />
+<meta property="og:description" content="Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다. 여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다." />
+<link rel="canonical" href="https://lixelsoft.github.io/posts/unity-memo-inputfield/" />
+<meta property="og:url" content="https://lixelsoft.github.io/posts/unity-memo-inputfield/" />
 <meta property="og:site_name" content="Lixelsoft" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-26T05:17:00+09:00" />
+<meta property="article:published_time" content="2021-08-27T10:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Process 실행 시간 확인" />
+<meta property="twitter:title" content="InputField TouchScreenKeyboard Done Event 처리" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-processdiagnostics/","headline":"Process 실행 시간 확인","dateModified":"2021-08-27T10:16:13+09:00","datePublished":"2021-08-26T05:17:00+09:00","description":"```cs using System.Diagnostics;","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-processdiagnostics/"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-memo-inputfield/","headline":"InputField TouchScreenKeyboard Done Event 처리","dateModified":"2021-08-27T10:00:00+09:00","datePublished":"2021-08-27T10:00:00+09:00","description":"Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다. 여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-memo-inputfield/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Process 실행 시간 확인 | Lixelsoft
+  <title>InputField TouchScreenKeyboard Done Event 처리 | Lixelsoft
   </title>
 
   <!--
@@ -296,7 +296,7 @@
       
 
       
-        <span>Process 실행 시간 확인</span>
+        <span>InputField TouchScreenKeyboard Done Event 처리</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -347,6 +347,20 @@
 
 
 
+  
+
+  
+
+  <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+  
+  
+
+  
+
+  
+
+
+
 <!-- return -->
 <div class="row">
 
@@ -354,7 +368,7 @@
 
     <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
-      <h1 data-toc-skip>Process 실행 시간 확인</h1>
+      <h1 data-toc-skip>InputField TouchScreenKeyboard Done Event 처리</h1>
 
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
@@ -371,43 +385,7 @@
   
     data-toggle="tooltip"
     data-placement="bottom"
-    title="Thu, Aug 26, 2021,  5:17 AM +0900"
-  >
-
-  
-  
-
-  
-    Aug 26
-  
-
-  <i class="unloaded">2021-08-26T05:17:00+09:00</i>
-
-</span>
-          by
-          <span class="author">
-            Lixelsoft
-          </span>
-        </div>
-
-        <div>
-          <!-- lastmod -->
-          
-          <span>
-            Updated
-            <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago lastmod"
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Fri, Aug 27, 2021, 10:16 AM +0900"
+    title="Fri, Aug 27, 2021, 10:00 AM +0900"
   >
 
   
@@ -417,10 +395,17 @@
     Aug 27
   
 
-  <i class="unloaded">2021-08-27T10:16:13+09:00</i>
+  <i class="unloaded">2021-08-27T10:00:00+09:00</i>
 
 </span>
+          by
+          <span class="author">
+            lixelsoft
           </span>
+        </div>
+
+        <div>
+          <!-- lastmod -->
           
 
           <!-- read time -->
@@ -434,7 +419,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="68 words">1 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="245 words">1 min</span>
 
 
           <!-- page views -->
@@ -442,7 +427,7 @@
 
           <!-- HITS -->
           &nbsp;
-          <a href="https://hits.seeyoufarm.com"><img min-width="94" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://lixelsoft.github.io/posts/unity-processdiagnostics/%2F&count_bg=%23AC58FA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false"/></a> 
+          <a href="https://hits.seeyoufarm.com"><img min-width="94" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://lixelsoft.github.io/posts/unity-memo-inputfield/%2F&count_bg=%23AC58FA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false"/></a> 
 
         </div>
 
@@ -452,7 +437,41 @@
 
         
 
-        <div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+        <p>Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다.<br />
+여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131131480-eb6bcea5-ffd5-40aa-b31a-6464f4d8a172.png" alt="image" />
+<br />
+InputField의 Inspector창에서 <code class="language-plaintext highlighter-rouge">Hide Soft Keyboard</code>, <code class="language-plaintext highlighter-rouge">Hide Mobile Input</code>을 체크해준다.<br />
+<br /></p>
+
+<div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">_keyboard</span> <span class="p">==</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">_inputField</span><span class="p">.</span><span class="n">isFocused</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Open Keyboard</span>
+  <span class="n">_keyboard</span> <span class="p">=</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="nf">Open</span><span class="p">(</span><span class="s">""</span><span class="p">,</span> <span class="n">TouchScreenKeyboardType</span><span class="p">.</span><span class="n">Default</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p>InputField를 Focus하면 키보드 띄워주는 것을 막아놨기 때문에 코드로 키보드를 오픈해주도록 구현한다.<br />
+<br /></p>
+
+<div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">_keyboard</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">_keyboard</span><span class="p">.</span><span class="n">status</span> <span class="p">==</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Done</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Do Something.</span>
+  <span class="n">_keyboard</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p>그리고 나서 return 버튼을 입력했는지 체크해주는 코드를 구현해 준다.
+<br />
+<br /></p>
+
+<h1 id="code">Code</h1>
+<div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -469,35 +488,24 @@
 15
 16
 17
-18
-19
-</pre></td><td class="rouge-code"><pre><span class="k">using</span> <span class="nn">System.Diagnostics</span><span class="p">;</span>
+</pre></td><td class="rouge-code"><pre><span class="k">public</span> <span class="k">class</span> <span class="nc">TouchScreenKeyboardExample</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
 
-<span class="k">namespace</span> <span class="nn">lixelsoft</span> <span class="p">{</span>
-  <span class="k">public</span> <span class="k">class</span> <span class="nc">Test</span> <span class="p">{</span>
+  <span class="k">private</span> <span class="n">TouchScreenKeyboard</span> <span class="n">_keyboard</span><span class="p">;</span>
+  <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span> <span class="n">TMP_InputField</span> <span class="n">_inputField</span><span class="p">;</span>
 
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">ProcessDiagnostics</span><span class="p">()</span> <span class="p">{</span>
-      <span class="n">Stopwatch</span> <span class="n">SW</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">Stopwatch</span><span class="p">();</span>
-      <span class="n">SW</span><span class="p">.</span><span class="nf">Start</span><span class="p">();</span>
-      <span class="kt">float</span> <span class="n">t</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
-      <span class="kt">float</span> <span class="n">k</span> <span class="p">=</span> <span class="m">0.99f</span><span class="p">;</span>
-      <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span><span class="p">&lt;</span> <span class="m">100000</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
-        <span class="kt">float</span> <span class="n">r</span> <span class="p">=</span> <span class="n">t</span> <span class="p">*</span> <span class="n">k</span><span class="p">;</span>
-      <span class="p">}</span>
-      <span class="n">SW</span><span class="p">.</span><span class="nf">Stop</span><span class="p">();</span>
-      <span class="n">UnityEngine</span><span class="p">.</span><span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"&lt;color=lime&gt; Result: </span><span class="p">{</span><span class="n">SW</span><span class="p">.</span><span class="n">Elapsed</span><span class="p">.</span><span class="nf">ToString</span><span class="p">()}</span><span class="s">&lt;/color&gt;"</span><span class="p">);</span>
+  <span class="k">private</span> <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">_keyboard</span> <span class="p">==</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">_inputField</span><span class="p">.</span><span class="n">isFocused</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Open Keyboard</span>
+      <span class="n">_keyboard</span> <span class="p">=</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="nf">Open</span><span class="p">(</span><span class="s">""</span><span class="p">,</span> <span class="n">TouchScreenKeyboardType</span><span class="p">.</span><span class="n">Default</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">_keyboard</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">_keyboard</span><span class="p">.</span><span class="n">status</span> <span class="p">==</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Done</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Do Something.</span>
+      <span class="n">_keyboard</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
     <span class="p">}</span>
   <span class="p">}</span>
-
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
-
-<!-- </details> -->
-
-<!-- 
-# References
----
-- <http://wiki.unity3d.com/index.php?title=ObjExporter> -->
 
 
       </div>
@@ -522,8 +530,8 @@
           <a href="/tags/unity/"
             class="post-tag no-text-decoration" >unity</a>
           
-          <a href="/tags/csharp/"
-            class="post-tag no-text-decoration" >csharp</a>
+          <a href="/tags/c/"
+            class="post-tag no-text-decoration" >c#</a>
           
           </div>
         
@@ -555,19 +563,19 @@
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Process 실행 시간 확인 - Lixelsoft&url=https://lixelsoft.github.io/posts/unity-processdiagnostics/" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=InputField TouchScreenKeyboard Done Event 처리 - Lixelsoft&url=https://lixelsoft.github.io/posts/unity-memo-inputfield/" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Process 실행 시간 확인 - Lixelsoft&u=https://lixelsoft.github.io/posts/unity-processdiagnostics/" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=InputField TouchScreenKeyboard Done Event 처리 - Lixelsoft&u=https://lixelsoft.github.io/posts/unity-memo-inputfield/" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text=Process 실행 시간 확인 - Lixelsoft&url=https://lixelsoft.github.io/posts/unity-processdiagnostics/" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=InputField TouchScreenKeyboard Done Event 처리 - Lixelsoft&url=https://lixelsoft.github.io/posts/unity-memo-inputfield/" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -758,33 +766,33 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
 
 
 
@@ -799,9 +807,6 @@
   
     
     
-      
-      
-    
   
     
     
@@ -810,6 +815,9 @@
     
   
     
+    
+      
+      
     
   
 
@@ -820,6 +828,59 @@
   <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
     <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3>
     <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/unity-processdiagnostics/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Aug 26
+  
+
+  <i class="unloaded">2021-08-26T05:17:00+09:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Process 실행 시간 확인</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                
+  
+    using System.Diagnostics;
+
+namespace lixelsoft {
+  public class Test {
+
+    public void ProcessDiagnostics() {
+      Stopwatch SW = new Stopwatch();
+      SW.Start();
+      float t = 1;
+   ...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
     
       
       
@@ -858,74 +919,11 @@
 
                 Sender App
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-  public void SenderApp() {
+
+  
+      public void SenderApp() {
     AndroidJavaClass UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-    AndroidJavaObject currentActivity = jc...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/unity-memo-inputfield/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago small"
-  >
-
-  
-  
-
-  
-    Aug 27
-  
-
-  <i class="unloaded">2021-08-27T10:00:00+09:00</i>
-
-</span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>InputField TouchScreenKeyboard Done Event 처리</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다.
-여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.
-
-
-
-InputField의 Inspector창에서 Hide Soft Keyboard, Hide Mobile Input을 체크해준다.
-
-
-1
-2
-3
-4
-if (_keyboard =...
+    AndroidJavaObject currentActivity = jc.GetStatic&lt;An...
               </p>
             </div>
           </div>
@@ -948,15 +946,15 @@ if (_keyboard =...
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <span class="btn btn-outline-primary disabled">
-    <p>-</p>
-  </span>
-  
-
-  
   <a href="/posts/unity-memo/" class="btn btn-outline-primary">
     <p>앱에서 다른 앱 실행하기 (with 변수 전달)</p>
   </a>
+  
+
+  
+  <span class="btn btn-outline-primary disabled">
+    <p>-</p>
+  </span>
   
 
 </div>
@@ -969,6 +967,16 @@ if (_keyboard =...
 
 </div> <!-- .row -->
 
+
+
+  <!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('.post-content img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 
