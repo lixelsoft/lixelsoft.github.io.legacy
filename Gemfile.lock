@@ -1,14 +1,3 @@
-PATH
-  remote: .
-  specs:
-    jekyll-theme-chirpy (4.1.0)
-      jekyll (~> 4.1)
-      jekyll-archives (~> 2.2)
-      jekyll-paginate (~> 1.1)
-      jekyll-redirect-from (~> 0.16)
-      jekyll-seo-tag (~> 2.7)
-      jekyll-sitemap (~> 1.4)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -22,7 +11,9 @@ GEM
     ethon (0.14.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
+    eventmachine (1.2.7-x64-mingw32)
     ffi (1.15.3)
+    ffi (1.15.3-x64-mingw32)
     forwardable-extended (2.6.0)
     html-proofer (3.19.2)
       addressable (~> 2.3)
@@ -72,9 +63,11 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.12.3-arm64-darwin)
+    mini_portile2 (2.6.1)
+    nokogiri (1.12.3)
+      mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    nokogiri (1.12.3-x86_64-darwin)
+    nokogiri (1.12.3-x64-mingw32)
       racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -92,6 +85,8 @@ GEM
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc (2.4.0-x64-mingw32)
+      ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
@@ -106,11 +101,17 @@ GEM
     yell (2.2.2)
 
 PLATFORMS
-  universal-darwin-20
+  ruby
+  x64-mingw32
 
 DEPENDENCIES
-  html-proofer (~> 3.18)
-  jekyll-theme-chirpy!
+  html-proofer
+  jekyll (>= 4.1.0, < 5.0)
+  jekyll-archives
+  jekyll-paginate
+  jekyll-redirect-from
+  jekyll-seo-tag
+  jekyll-sitemap
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

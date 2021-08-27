@@ -1,11 +1,13 @@
 ---
 layout: compress
 # Default layout
+# v2.0
+# https://github.com/cotes2020/jekyll-theme-chirpy
+# © 2017-2019 Cotes Chung
+# MIT Licensed
 ---
 
 <!DOCTYPE html>
-
-{% include lang.html %}
 
 {% capture prefer_mode %}
   {% if site.theme_mode %}
@@ -13,7 +15,7 @@ layout: compress
   {% endif %}
 {% endcapture %}
 
-<html lang="{{ site.lang }}" {{ prefer_mode }}>
+<html lang="{{ site.lang | split: "_" | first | default: "en" }}" {{ prefer_mode }}>
 
   {% include head.html %}
 
@@ -48,7 +50,8 @@ layout: compress
 
     {% include search-loader.html %}
 
-    {% include js-selector.html %}
+    <!-- 2021-06-29 추가 : 애널리틱스 적용 -->
+    {% include google-analytics.html %}
 
   </body>
 
