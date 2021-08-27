@@ -2,8 +2,8 @@
 title: Process 실행 시간 확인
 author: Lixelsoft
 date: 2021-08-26 05:17:00 +09:00
-categories: [Unity, Unity Memo]
-tags: [unity, csharp]
+categories: [c#, Memo]
+tags: [unity, c#]
 math: true
 mermaid: true
 
@@ -16,7 +16,7 @@ mermaid: true
 <summary markdown="span"> 
 ProcessDiagnostics.cs
 </summary>
-</br>
+<br>
 
 ```cs
 using System.Diagnostics;

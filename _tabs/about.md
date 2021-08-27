@@ -13,6 +13,6 @@ order: 4
 
 > Unity C# Developer
 
-- [https://github.com/rito15](https://github.com/rito15)
+- [https://github.com/lixelsoft](https://github.com/lixelsoft)
 
-- ghdtkals15@gmail.com
+- lixelsoft@gmail.com

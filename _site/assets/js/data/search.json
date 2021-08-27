@@ -3,8 +3,8 @@
   {
     "title": "Process 실행 시간 확인",
     "url": "/posts/unity-processdiagnostics/",
-    "categories": "Unity, Unity Memo",
-    "tags": "unity, csharp",
+    "categories": "c#, Memo",
+    "tags": "unity, c#",
     "date": "2021-08-26 05:17:00 +0900",
     
 
@@ -12,7 +12,7 @@
 
 
 
-    "snippet": "Source Code ProcessDiagnostics.cs&amp;lt;/br&amp;gt;using System.Diagnostics;namespace lixelsoft {  public class Test {    public void ProcessDiagnostics() {      // using System.Diagnostics;      Stopwatch SW = new Stopwatch();      SW.Start();      float t = 1;      float k = 0.99f;      for(in..."
+    "snippet": "Source Code ProcessDiagnostics.csusing System.Diagnostics;namespace lixelsoft {  public class Test {    public void ProcessDiagnostics() {      // using System.Diagnostics;      Stopwatch SW = new Stopwatch();      SW.Start();      float t = 1;      float k = 0.99f;      for(int i = 0; i&amp;lt; ..."
   }
   
 ]
