@@ -1,5 +1,1 @@
-User-agent: *
-
-Disallow: /norobots/
-
-Sitemap: /sitemap.xml
+Sitemap: https://lixelsoft.github.io/sitemap.xml

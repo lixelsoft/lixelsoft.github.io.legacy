@@ -4,12 +4,7 @@ echo "******************************"
 echo "Start"
 echo "******************************"
 
-# bundle exec jekyll serve --trace
-
-rm -rf docs
-mkdir docs
-
-cp -r ./_site/* ./docs
+bundle exec jekyll serve --trace
 
 git add .
 
