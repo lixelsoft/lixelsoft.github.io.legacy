@@ -4,7 +4,7 @@
     "title": "Firebase Cloudfunction 사용해서 푸시기능 구현하기",
     "url": "/posts/unity-memo-cloudfunction/",
     "categories": "Unity, firebase",
-    "tags": "unity, firebase, cloudfunction",
+    "tags": "unity, firebase, cloudfunction, fcm",
     "date": "2021-08-28 01:00:00 +0900",
     
 
@@ -16,7 +16,22 @@
   },
   
   {
-    "title": "InputField TouchScreenKeyboard Done Event 처리",
+    "title": "Firebase Cloudfunction 사용해서 인앱결제 검증하기",
+    "url": "/posts/unity-memo-cloudfunction-iapverify/",
+    "categories": "Unity, firebase",
+    "tags": "unity, firebase, cloudfunction, iap",
+    "date": "2021-08-28 01:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "작성중 …"
+  },
+  
+  {
+    "title": "InputField 키보드 엔터 처리",
     "url": "/posts/unity-memo-inputfield/",
     "categories": "Unity, Unity Memo",
     "tags": "unity, c#",
@@ -27,7 +42,7 @@
 
 
 
-    "snippet": "InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.- InputField Keyboard Event Listener 등록[SerializeField] TMP_InputField _inputField;private void Start() {  _inputField.onTouchScreenKeyboardStatusChanged.AddListener(OnTouchScreenKeyboardStatusChanged);}- Keyboard Event 처리 함수 구현private void..."
+    "snippet": "DescribeInputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.InputField Keyboard Event Listener 등록[SerializeField] TMP_InputField _inputField;private void Start() {  _inputField.onTouchScreenKeyboardStatusChanged.AddListener(OnTouchScreenKeyboardStatusChanged);}Keyboard Event 처리 함수 구현private ..."
   },
   
   {

@@ -35,7 +35,7 @@
 <meta property="twitter:title" content="Lixelsoft" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Lixelsoft"},"url":"https://lixelsoft.github.io/","name":"Lixelsoft","headline":"Lixelsoft","sameAs":["https://github.com/Lixelsoft"],"description":"Lixelsoft Tech Blog","@type":"WebSite","@context":"https://schema.org"}</script>
+{"url":"https://lixelsoft.github.io/","name":"Lixelsoft","author":{"@type":"Person","name":"Lixelsoft"},"description":"Lixelsoft Tech Blog","headline":"Lixelsoft","@type":"WebSite","sameAs":["https://github.com/Lixelsoft"],"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -441,7 +441,7 @@
 
   <div class="post-preview">
     <h1>
-      <a href="/posts/unity-memo-inputfield/">InputField TouchScreenKeyboard Done Event 처리</a>
+      <a href="/posts/unity-memo-cloudfunction-iapverify/">Firebase Cloudfunction 사용해서 인앱결제 검증하기</a>
     </h1>
 
     <div class="post-content">
@@ -452,11 +452,89 @@
 
 
 
-        InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.
+        작성중 …
+
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sat, Aug 28, 2021,  1:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 28
+  
+
+  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
 
 
 
-- InputField Keyboard Event Listener 등록
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="4 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/unity-memo-inputfield/">InputField 키보드 엔터 처리</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Describe
+
+
+InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.
+
+
+InputField Keyboard Event Listener 등록
 
 
 
@@ -464,7 +542,7 @@
     [SerializeField] TMP_InputField _inputField;
 
 private void Start() {
-  _inputField.onT...
+  _inputF...
       </p>
     </div>
 
@@ -511,7 +589,7 @@ private void Start() {
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="151 words">1 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="150 words">1 min</span>
 
 
         <!-- page views -->
@@ -790,6 +868,11 @@ namespace lixelsoft {
         
         
         
+        <li><a href="/posts/unity-memo-inputfield/">InputField 키보드 엔터 처리</a></li>
+      
+        
+        
+        
         <li><a href="/posts/unity-processdiagnostics/">Process 실행 시간 확인</a></li>
       
 
@@ -839,44 +922,10 @@ namespace lixelsoft {
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
     
   
     
@@ -892,7 +941,120 @@ namespace lixelsoft {
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -927,16 +1089,22 @@ namespace lixelsoft {
         <a class="post-tag" href="/tags/unity/">unity</a>
       
         
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
         <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/fcm/">fcm</a>
       
         
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
+        <a class="post-tag" href="/tags/iap/">iap</a>
       
 
       </div>
@@ -1047,44 +1215,10 @@ namespace lixelsoft {
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1100,7 +1234,120 @@ namespace lixelsoft {
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1130,16 +1377,22 @@ namespace lixelsoft {
         <a class="post-tag" href="/tags/unity/">unity</a>
       
         
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
         <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/fcm/">fcm</a>
       
         
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
+        <a class="post-tag" href="/tags/iap/">iap</a>
       
 
     </div>

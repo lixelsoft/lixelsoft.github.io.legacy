@@ -37,7 +37,7 @@
 <meta property="twitter:title" content="앱에서 다른 앱 실행하기 (with 변수 전달)" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-memo-execapp/","headline":"앱에서 다른 앱 실행하기 (with 변수 전달)","dateModified":"2021-08-27T00:03:00+09:00","datePublished":"2021-08-27T00:03:00+09:00","description":"Sender App","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-memo-execapp/"},"@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-memo-execapp/"},"url":"https://lixelsoft.github.io/posts/unity-memo-execapp/","author":{"@type":"Person","name":"lixelsoft"},"description":"Sender App","dateModified":"2021-08-27T00:03:00+09:00","datePublished":"2021-08-27T00:03:00+09:00","headline":"앱에서 다른 앱 실행하기 (with 변수 전달)","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -611,6 +611,11 @@
         
         
         
+        <li><a href="/posts/unity-memo-inputfield/">InputField 키보드 엔터 처리</a></li>
+      
+        
+        
+        
         <li><a href="/posts/unity-processdiagnostics/">Process 실행 시간 확인</a></li>
       
 
@@ -660,44 +665,10 @@
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
     
   
     
@@ -713,7 +684,120 @@
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -748,16 +832,22 @@
         <a class="post-tag" href="/tags/unity/">unity</a>
       
         
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
         <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/fcm/">fcm</a>
       
         
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
+        <a class="post-tag" href="/tags/iap/">iap</a>
       
 
       </div>
@@ -799,6 +889,19 @@
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -940,7 +1043,7 @@ namespace lixelsoft {
   <i class="unloaded">2021-08-27T10:00:00+09:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>InputField TouchScreenKeyboard Done Event 처리</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>InputField 키보드 엔터 처리</h3>
             <div class="text-muted small">
               <p>
                 
@@ -949,11 +1052,13 @@ namespace lixelsoft {
 
 
 
-                InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.
+                Describe
 
 
+InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.
 
-- InputField Keyboard Event Listener 등록
+
+InputField Keyboard Event Listener 등록
 
 1
 2
@@ -963,7 +1068,7 @@ namespace lixelsoft {
 [SerializeField] TMP_InputField _inputField;
 
 private void Start() {
-  _inputField.on...
+  _input...
               </p>
             </div>
           </div>
@@ -973,7 +1078,7 @@ private void Start() {
       
       
       <div class="card">
-        <a href="/posts/unity-memo-cloudfunction/">
+        <a href="/posts/unity-memo-cloudfunction-iapverify/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -996,7 +1101,7 @@ private void Start() {
   <i class="unloaded">2021-08-28T01:00:00+09:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase Cloudfunction 사용해서 푸시기능 구현하기</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase Cloudfunction 사용해서 인앱결제 검증하기</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1036,7 +1141,7 @@ private void Start() {
 
   
   <a href="/posts/unity-memo-inputfield/" class="btn btn-outline-primary">
-    <p>InputField TouchScreenKeyboard Done Event 처리</p>
+    <p>InputField 키보드 엔터 처리</p>
   </a>
   
 
@@ -1144,44 +1249,10 @@ private void Start() {
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1197,7 +1268,120 @@ private void Start() {
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1227,16 +1411,22 @@ private void Start() {
         <a class="post-tag" href="/tags/unity/">unity</a>
       
         
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
         <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/fcm/">fcm</a>
       
         
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
+        <a class="post-tag" href="/tags/iap/">iap</a>
       
 
     </div>
