@@ -1,7 +1,7 @@
 [
   
   {
-    "title": "Firebase Cloudfunction 사용해서 푸시기능 구현하기",
+    "title": "Firebase CloudFunction 사용해서 푸시기능 구현하기",
     "url": "/posts/unity-memo-cloudfunction/",
     "categories": "Unity, firebase",
     "tags": "unity, firebase, cloudfunction, fcm",
@@ -16,7 +16,7 @@
   },
   
   {
-    "title": "Firebase Cloudfunction 사용해서 인앱결제 검증하기",
+    "title": "Firebase CloudFunction 사용해서 인앱결제 검증하기",
     "url": "/posts/unity-memo-cloudfunction-iapverify/",
     "categories": "Unity, firebase",
     "tags": "unity, firebase, cloudfunction, iap",
