@@ -365,6 +365,82 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/unity-memo-cloudfunction/">Firebase Cloudfunction 사용해서 푸시기능 구현하기</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        작성중 …
+
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sat, Aug 28, 2021,  1:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 28
+  
+
+  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="4 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/unity-memo-inputfield/">InputField TouchScreenKeyboard Done Event 처리</a>
     </h1>
 
@@ -376,17 +452,19 @@
 
 
 
-        Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다.
-여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.
+        InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.
 
 
 
-InputField의 Inspector창에서 Hide Soft Keyboard, Hide Mobile Input을 체크해준다.
+- InputField Keyboard Event Listener 등록
 
 
 
   
-    if (_keyboard =...
+    [SerializeField] TMP_InputField _inputField;
+
+private void Start() {
+  _inputField.onT...
       </p>
     </div>
 
@@ -433,7 +511,7 @@ InputField의 Inspector창에서 Hide Soft Keyboard, Hide Mobile Input을 체크
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="245 words">1 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="151 words">1 min</span>
 
 
         <!-- page views -->
@@ -450,7 +528,7 @@ InputField의 Inspector창에서 Hide Soft Keyboard, Hide Mobile Input을 체크
 
   <div class="post-preview">
     <h1>
-      <a href="/posts/unity-memo/">앱에서 다른 앱 실행하기 (with 변수 전달)</a>
+      <a href="/posts/unity-memo-execapp/">앱에서 다른 앱 실행하기 (with 변수 전달)</a>
     </h1>
 
     <div class="post-content">
@@ -751,10 +829,6 @@ namespace lixelsoft {
     
     
     
-      
-        
-        
-
   
     
     
@@ -769,6 +843,69 @@ namespace lixelsoft {
         
         
 
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -794,6 +931,12 @@ namespace lixelsoft {
       
         
         <a class="post-tag" href="/tags/c/">c#</a>
+      
+        
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
 
       </div>
@@ -894,10 +1037,6 @@ namespace lixelsoft {
     
     
     
-      
-        
-        
-
   
     
     
@@ -912,6 +1051,69 @@ namespace lixelsoft {
         
         
 
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -932,6 +1134,12 @@ namespace lixelsoft {
       
         
         <a class="post-tag" href="/tags/c/">c#</a>
+      
+        
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
 
     </div>

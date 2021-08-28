@@ -26,8 +26,8 @@
 <meta property="og:title" content="InputField TouchScreenKeyboard Done Event 처리" />
 <meta name="author" content="lixelsoft" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다. 여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다." />
-<meta property="og:description" content="Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다. 여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다." />
+<meta name="description" content="InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다." />
+<meta property="og:description" content="InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다." />
 <link rel="canonical" href="https://lixelsoft.github.io/posts/unity-memo-inputfield/" />
 <meta property="og:url" content="https://lixelsoft.github.io/posts/unity-memo-inputfield/" />
 <meta property="og:site_name" content="Lixelsoft" />
@@ -37,7 +37,7 @@
 <meta property="twitter:title" content="InputField TouchScreenKeyboard Done Event 처리" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-memo-inputfield/","headline":"InputField TouchScreenKeyboard Done Event 처리","dateModified":"2021-08-27T10:00:00+09:00","datePublished":"2021-08-27T10:00:00+09:00","description":"Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다. 여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-memo-inputfield/"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-memo-inputfield/","headline":"InputField TouchScreenKeyboard Done Event 처리","dateModified":"2021-08-27T10:00:00+09:00","datePublished":"2021-08-27T10:00:00+09:00","description":"InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-memo-inputfield/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -347,20 +347,6 @@
 
 
 
-  
-
-  
-
-  <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
-  
-  
-
-  
-
-  
-
-
-
 <!-- return -->
 <div class="row">
 
@@ -419,7 +405,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="245 words">1 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="151 words">1 min</span>
 
 
           <!-- page views -->
@@ -437,40 +423,54 @@
 
         
 
-        <p>Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다.<br />
-여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.</p>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131131480-eb6bcea5-ffd5-40aa-b31a-6464f4d8a172.png" alt="image" />
+        <p>InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.
 <br />
-InputField의 Inspector창에서 <code class="language-plaintext highlighter-rouge">Hide Soft Keyboard</code>, <code class="language-plaintext highlighter-rouge">Hide Mobile Input</code>을 체크해준다.<br />
 <br /></p>
 
+<h2 id="--inputfield-keyboard-event-listener-등록">- InputField Keyboard Event Listener 등록</h2>
+<hr />
 <div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">_keyboard</span> <span class="p">==</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">_inputField</span><span class="p">.</span><span class="n">isFocused</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Open Keyboard</span>
-  <span class="n">_keyboard</span> <span class="p">=</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="nf">Open</span><span class="p">(</span><span class="s">""</span><span class="p">,</span> <span class="n">TouchScreenKeyboardType</span><span class="p">.</span><span class="n">Default</span><span class="p">);</span>
+5
+</pre></td><td class="rouge-code"><pre><span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span> <span class="n">TMP_InputField</span> <span class="n">_inputField</span><span class="p">;</span>
+
+<span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">_inputField</span><span class="p">.</span><span class="n">onTouchScreenKeyboardStatusChanged</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnTouchScreenKeyboardStatusChanged</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
-<p>InputField를 Focus하면 키보드 띄워주는 것을 막아놨기 때문에 코드로 키보드를 오픈해주도록 구현한다.<br />
-<br /></p>
 
+<h2 id="--keyboard-event-처리-함수-구현">- Keyboard Event 처리 함수 구현</h2>
+<hr />
 <div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
-</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">_keyboard</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">_keyboard</span><span class="p">.</span><span class="n">status</span> <span class="p">==</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Done</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Do Something.</span>
-  <span class="n">_keyboard</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="k">private</span> <span class="k">void</span> <span class="nf">OnTouchScreenKeyboardStatusChanged</span><span class="p">(</span><span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span> <span class="n">newStatus</span><span class="p">)</span>  <span class="p">{</span>
+  <span class="k">switch</span> <span class="p">(</span><span class="n">newStatus</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Done</span><span class="p">:</span>
+      <span class="c1">// DO Somethine</span>
+      <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Visible</span><span class="p">:</span>
+    <span class="k">case</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Canceled</span><span class="p">:</span>
+    <span class="k">case</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">LostFocus</span><span class="p">:</span>
+      <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
+
 </pre></td></tr></tbody></table></code></div></div>
-<p>그리고 나서 return 버튼을 입력했는지 체크해주는 코드를 구현해 준다.
-<br />
-<br /></p>
 
 <h1 id="code">Code</h1>
+<hr />
 <div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -488,24 +488,38 @@ InputField의 Inspector창에서 <code class="language-plaintext highlighter-rou
 15
 16
 17
+18
+19
+20
+21
 </pre></td><td class="rouge-code"><pre><span class="k">public</span> <span class="k">class</span> <span class="nc">TouchScreenKeyboardExample</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
 
-  <span class="k">private</span> <span class="n">TouchScreenKeyboard</span> <span class="n">_keyboard</span><span class="p">;</span>
   <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span> <span class="n">TMP_InputField</span> <span class="n">_inputField</span><span class="p">;</span>
 
-  <span class="k">private</span> <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">_keyboard</span> <span class="p">==</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">_inputField</span><span class="p">.</span><span class="n">isFocused</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// Open Keyboard</span>
-      <span class="n">_keyboard</span> <span class="p">=</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="nf">Open</span><span class="p">(</span><span class="s">""</span><span class="p">,</span> <span class="n">TouchScreenKeyboardType</span><span class="p">.</span><span class="n">Default</span><span class="p">);</span>
-    <span class="p">}</span>
+  <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">_inputField</span><span class="p">.</span><span class="n">onTouchScreenKeyboardStatusChanged</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnTouchScreenKeyboardStatusChanged</span><span class="p">);</span>
+  <span class="p">}</span>
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">_keyboard</span> <span class="p">!=</span> <span class="k">null</span> <span class="p">&amp;&amp;</span> <span class="n">_keyboard</span><span class="p">.</span><span class="n">status</span> <span class="p">==</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Done</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// Do Something.</span>
-      <span class="n">_keyboard</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+  <span class="k">private</span> <span class="k">void</span> <span class="nf">OnTouchScreenKeyboardStatusChanged</span><span class="p">(</span><span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span> <span class="n">newStatus</span><span class="p">)</span>  <span class="p">{</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">newStatus</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">case</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Done</span><span class="p">:</span>
+        <span class="c1">// DO Something</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Visible</span><span class="p">:</span>
+    <span class="k">case</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">Canceled</span><span class="p">:</span>
+    <span class="k">case</span> <span class="n">TouchScreenKeyboard</span><span class="p">.</span><span class="n">Status</span><span class="p">.</span><span class="n">LostFocus</span><span class="p">:</span>
+      <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
   <span class="p">}</span>
+
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="references">References</h1>
+<hr />
+<ul>
+  <li><a href="https://docs.unity3d.com/kr/current/ScriptReference/TouchScreenKeyboard.Status.html">https://docs.unity3d.com/kr/current/ScriptReference/TouchScreenKeyboard.Status.html</a></li>
+</ul>
 
 
       </div>
@@ -677,10 +691,6 @@ InputField의 Inspector창에서 <code class="language-plaintext highlighter-rou
     
     
     
-      
-        
-        
-
   
     
     
@@ -695,6 +705,69 @@ InputField의 Inspector창에서 <code class="language-plaintext highlighter-rou
         
         
 
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -721,12 +794,23 @@ InputField의 Inspector창에서 <code class="language-plaintext highlighter-rou
         
         <a class="post-tag" href="/tags/c/">c#</a>
       
+        
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
+      
 
       </div>
     </div>
   
   </div> <!-- .access -->
 
+  
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">Contents</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
   
 
 </div> <!-- #panel-wrapper -->
@@ -761,6 +845,19 @@ InputField의 Inspector창에서 <code class="language-plaintext highlighter-rou
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -801,25 +898,6 @@ InputField의 Inspector창에서 <code class="language-plaintext highlighter-rou
 
 <!-- Fill with the other newlest posts  -->
 
-
-
-
-  
-    
-    
-  
-    
-    
-      
-      
-    
-  
-    
-    
-      
-      
-    
-  
 
 
 
@@ -885,7 +963,7 @@ namespace lixelsoft {
       
       
       <div class="card">
-        <a href="/posts/unity-memo/">
+        <a href="/posts/unity-memo-execapp/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -930,6 +1008,49 @@ namespace lixelsoft {
         </a>
       </div>
     
+      
+      
+      <div class="card">
+        <a href="/posts/unity-memo-cloudfunction/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Aug 28
+  
+
+  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase Cloudfunction 사용해서 푸시기능 구현하기</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                작성중 …
+
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
     </div> <!-- .card-deck -->
   </div> <!-- #related-posts -->
 
@@ -946,15 +1067,15 @@ namespace lixelsoft {
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/posts/unity-memo/" class="btn btn-outline-primary">
+  <a href="/posts/unity-memo-execapp/" class="btn btn-outline-primary">
     <p>앱에서 다른 앱 실행하기 (with 변수 전달)</p>
   </a>
   
 
   
-  <span class="btn btn-outline-primary disabled">
-    <p>-</p>
-  </span>
+  <a href="/posts/unity-memo-cloudfunction/" class="btn btn-outline-primary">
+    <p>Firebase Cloudfunction 사용해서 푸시기능 구현하기</p>
+  </a>
   
 
 </div>
@@ -967,16 +1088,6 @@ namespace lixelsoft {
 
 </div> <!-- .row -->
 
-
-
-  <!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-
-<script type="text/javascript">
-  const imgs = document.querySelectorAll('.post-content img');
-  const observer = lozad(imgs);
-  observer.observe();
-</script>
 
 
 
@@ -1061,10 +1172,6 @@ namespace lixelsoft {
     
     
     
-      
-        
-        
-
   
     
     
@@ -1079,6 +1186,69 @@ namespace lixelsoft {
         
         
 
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1099,6 +1269,12 @@ namespace lixelsoft {
       
         
         <a class="post-tag" href="/tags/c/">c#</a>
+      
+        
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
 
     </div>

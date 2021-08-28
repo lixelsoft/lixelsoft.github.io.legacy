@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Firebase Cloudfunction 사용해서 푸시기능 구현하기",
+    "url": "/posts/unity-memo-cloudfunction/",
+    "categories": "Unity, firebase",
+    "tags": "unity, firebase, cloudfunction",
+    "date": "2021-08-28 01:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "작성중 …"
+  },
+  
+  {
     "title": "InputField TouchScreenKeyboard Done Event 처리",
     "url": "/posts/unity-memo-inputfield/",
     "categories": "Unity, Unity Memo",
@@ -12,12 +27,12 @@
 
 
 
-    "snippet": "Unity의 InputField는 Default로 OS의 키보드를 오픈하게 되어 있다.여기서는 직접 키보드를 오픈해서 컨트롤 하기 위해 해당 기능을 disable시켜 준다.InputField의 Inspector창에서 Hide Soft Keyboard, Hide Mobile Input을 체크해준다.if (_keyboard == null &amp;amp;&amp;amp; _inputField.isFocused) {  // Open Keyboard  _keyboard = TouchScreenKeyboard.Open(&quot;&qu..."
+    "snippet": "InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.- InputField Keyboard Event Listener 등록[SerializeField] TMP_InputField _inputField;private void Start() {  _inputField.onTouchScreenKeyboardStatusChanged.AddListener(OnTouchScreenKeyboardStatusChanged);}- Keyboard Event 처리 함수 구현private void..."
   },
   
   {
     "title": "앱에서 다른 앱 실행하기 (with 변수 전달)",
-    "url": "/posts/unity-memo/",
+    "url": "/posts/unity-memo-execapp/",
     "categories": "Unity, Unity Memo",
     "tags": "unity, csharp",
     "date": "2021-08-27 00:03:00 +0900",
