@@ -37,7 +37,7 @@
 <meta property="twitter:title" content="InputField 키보드 엔터 처리" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-memo-inputfield/"},"url":"https://lixelsoft.github.io/posts/unity-memo-inputfield/","author":{"@type":"Person","name":"lixelsoft"},"description":"Describe","dateModified":"2021-08-28T21:49:30+09:00","datePublished":"2021-08-27T10:00:00+09:00","headline":"InputField 키보드 엔터 처리","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-memo-inputfield/","headline":"InputField 키보드 엔터 처리","dateModified":"2021-08-28T21:49:30+09:00","datePublished":"2021-08-27T10:00:00+09:00","description":"Describe","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-memo-inputfield/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -688,11 +688,6 @@
         
         
         
-        <li><a href="/posts/unity-memo-cloudfunction/">Firebase CloudFunction 사용해서 푸시기능 구현하기</a></li>
-      
-        
-        
-        
         <li><a href="/posts/unity-processdiagnostics/">Process 실행 시간 확인</a></li>
       
 
@@ -766,10 +761,6 @@
     
     
     
-      
-        
-        
-
   
     
     
@@ -779,8 +770,6 @@
     
     
     
-    
-      
     
   
     
@@ -795,20 +784,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -845,6 +820,24 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -870,6 +863,8 @@
     
     
     
+    
+      
     
   
     
@@ -909,16 +904,16 @@
         <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/csharp/">csharp</a>
       
         
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
+        <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/c/">c#</a>
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
         <a class="post-tag" href="/tags/fcm/">fcm</a>
@@ -1002,6 +997,19 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -1045,6 +1053,54 @@
   <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
     <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3>
     <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/unity-memo-execapp/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Aug 27
+  
+
+  <i class="unloaded">2021-08-27T00:03:00+09:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>앱에서 다른 앱 실행하기 (with 변수 전달)</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Sender App
+
+
+  
+      public void SenderApp() {
+    AndroidJavaClass UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+    AndroidJavaObject currentActivity = jc.GetStatic&lt;An...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
     
       
       
@@ -1102,55 +1158,7 @@ namespace lixelsoft {
       
       
       <div class="card">
-        <a href="/posts/unity-memo-execapp/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago small"
-  >
-
-  
-  
-
-  
-    Aug 27
-  
-
-  <i class="unloaded">2021-08-27T00:03:00+09:00</i>
-
-</span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>앱에서 다른 앱 실행하기 (with 변수 전달)</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                Sender App
-
-
-  
-      public void SenderApp() {
-    AndroidJavaClass UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-    AndroidJavaObject currentActivity = jc.GetStatic&lt;An...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/unity-memo-cloudfunction-iapverify/">
+        <a href="/posts/unity-firebase-cloudfunction-fcm/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1173,7 +1181,7 @@ namespace lixelsoft {
   <i class="unloaded">2021-08-28T01:00:00+09:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction 사용해서 인앱결제 검증하기</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction 사용해서 푸시기능 구현하기</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1212,8 +1220,8 @@ namespace lixelsoft {
   
 
   
-  <a href="/posts/unity-memo-cloudfunction-iapverify/" class="btn btn-outline-primary">
-    <p>Firebase CloudFunction 사용해서 인앱결제 검증하기</p>
+  <a href="/posts/unity-firebase-cloudfunction-fcm/" class="btn btn-outline-primary">
+    <p>Firebase CloudFunction 사용해서 푸시기능 구현하기</p>
   </a>
   
 
@@ -1345,10 +1353,6 @@ namespace lixelsoft {
     
     
     
-      
-        
-        
-
   
     
     
@@ -1358,8 +1362,6 @@ namespace lixelsoft {
     
     
     
-    
-      
     
   
     
@@ -1374,20 +1376,6 @@ namespace lixelsoft {
     
     
     
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1424,6 +1412,24 @@ namespace lixelsoft {
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1449,6 +1455,8 @@ namespace lixelsoft {
     
     
     
+    
+      
     
   
     
@@ -1483,16 +1491,16 @@ namespace lixelsoft {
         <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/csharp/">csharp</a>
       
         
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
+        <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/c/">c#</a>
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
         <a class="post-tag" href="/tags/fcm/">fcm</a>
