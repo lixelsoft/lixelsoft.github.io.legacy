@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./tools/run.sh",
+    "deploy": "./tools/deploy.sh"
   },
   "repository": {
     "type": "git",

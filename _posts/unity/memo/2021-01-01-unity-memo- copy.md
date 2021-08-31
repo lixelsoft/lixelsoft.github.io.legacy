@@ -42,7 +42,7 @@ namespace Lixelsoft {
     private float _privateVariable;
 
 
-    public void CodeConvensionFunction(int intVariable, float floatVariable) {
+    public void CodeConvensionFunction(int intVariable, float floagitVariable) {
       console.log($" {PublicVariable} {intVariable} ");
       console.log($" {_privateVariable} {floatVariable} ");
 
