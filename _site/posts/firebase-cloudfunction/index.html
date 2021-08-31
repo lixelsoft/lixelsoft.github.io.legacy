@@ -419,7 +419,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="661 words">3 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="667 words">3 min</span>
 
 
           <!-- page views -->
@@ -438,6 +438,7 @@
         
 
         <h1 id="install">Install</h1>
+<hr />
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -457,6 +458,7 @@
 <span class="nv">$ </span>firebase init
 </pre></td></tr></tbody></table></code></div></div>
 
+<h2 id="firebase-install">Firebase Install</h2>
 <ul>
   <li>아래와 같이 어떤 features를 선택할지 정해주는 메뉴가 나오는데 여기서 <code class="language-plaintext highlighter-rouge">Functions</code>를 선택해준다.<br />
 주의할 점은 <code class="language-plaintext highlighter-rouge">스페이스바</code>로 선택을 해주고 <code class="language-plaintext highlighter-rouge">엔터키</code>로 넘어가줘야함<br />
@@ -466,6 +468,8 @@
 </ul>
 
 <h1 id="usage">Usage</h1>
+<hr />
+
 <ul>
   <li>설치가 완료되고 나면 여러 파일들이 생성이 되는데 이중에서 <code class="language-plaintext highlighter-rouge">functions/index.js</code> 파일을 오픈해 준다.<br />
 코드에서 <code class="language-plaintext highlighter-rouge">"exports.helloWorld"</code> 이 부분이 예제코드라고 할 수 있는데 이 부분을 주석해제 시켜 준다.</li>
@@ -490,7 +494,7 @@
   <span class="nx">response</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello from Firebase!</span><span class="dl">"</span><span class="p">);</span>
 <span class="p">});</span>
 </pre></td></tr></tbody></table></code></div></div>
-
+<h2 id="local-test">Local Test</h2>
 <ul>
   <li>로컬에서 테스트를 진행하려면 아래 명령어를 입력하면 된다.
 서버에 올리기 전에 먼저 로컬에서 테스트 후 올려보는것이 좋다.
@@ -505,6 +509,7 @@
 </ul>
 
 <h1 id="deploy">Deploy</h1>
+<hr />
 
 <ul>
   <li>아래 명령어를 입력해서 실제로 서버에 올리면 완료.
@@ -524,7 +529,8 @@
 </ul>
 
 <h1 id="지역-변경">지역 변경</h1>
-
+<hr />
+<h2 id="change-region">Change Region</h2>
 <ul>
   <li>
     <p>기본으로 함수를 배포하게 되면 <code class="language-plaintext highlighter-rouge">us-cental1</code> 지역으로 설정 되는데 지역을 변경하려면 함수 배포 전에 코드를 수정해주어야 한다.
@@ -684,12 +690,12 @@
         
         
         
-        <li><a href="/posts/unity-memo-inputfield/">InputField 키보드 엔터 처리</a></li>
+        <li><a href="/posts/unity-processdiagnostics/">Process 실행 시간 확인</a></li>
       
         
         
         
-        <li><a href="/posts/unity-processdiagnostics/">Process 실행 시간 확인</a></li>
+        <li><a href="/posts/unity-memo-inputfield/">InputField 키보드 엔터 처리</a></li>
       
 
       </ul>
@@ -748,6 +754,55 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -786,25 +841,6 @@
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -844,6 +880,31 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -853,6 +914,62 @@
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -914,7 +1031,13 @@
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
+        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
+      
+        
         <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
+        <a class="post-tag" href="/tags/convension/">convension</a>
       
         
         <a class="post-tag" href="/tags/fcm/">fcm</a>
@@ -928,6 +1051,11 @@
   
   </div> <!-- .access -->
 
+  
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">Contents</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
   
 
 </div> <!-- #panel-wrapper -->
@@ -962,6 +1090,32 @@
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -1044,38 +1198,64 @@
 
 
 
-  
-    
-    
-  
-    
-    
-      
-      
-    
-  
-    
-    
-      
-      
-    
-  
-    
-    
-      
-      
-        
-        
-        
-          
-
-
-
 
 
   <div id="related-posts" class="mt-5 mb-2 mb-sm-4">
     <h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3>
     <div class="card-deck mb-4">
+    
+      
+      
+      <div class="card">
+        <a href="/posts/firebase-cloudfunction-security/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Aug 31
+  
+
+  <i class="unloaded">2021-08-31T06:00:00+09:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction Security</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Intro
+
+생각해보니 CloudFunction에 보안을 적용 안해서 개나소나 전부 정보를 획득할수 있었다.
+이번장에서는 Firebase Token을 이욯해서 검증된 사용자에게만 요청에 대한 응답을 주도록 구현해 보도록 하겠다.
+
+작성중…
+
+References
+
+
+
+  https://github.com/firebase/functions-samples/...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
     
       
       
@@ -1123,7 +1303,7 @@
       
       
       <div class="card">
-        <a href="/posts/unity-firebase-cloudfunction-iapverify/">
+        <a href="/posts/unity-firebase-cloudfunction-iapverify-1/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1146,7 +1326,7 @@
   <i class="unloaded">2021-08-28T01:00:00+09:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction 사용해서 인앱결제 검증하기</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1155,64 +1335,13 @@
 
 
 
-                작성중 …
+                Create API Key
 
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/unity-memo-inputfield/">
-          <div class="card-body">
-            <!--
-  Date format snippet
 
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago small"
-  >
+Google Play Console 서비스 계정 등록
 
   
-  
-
-  
-    Aug 27
-  
-
-  <i class="unloaded">2021-08-27T10:00:00+09:00</i>
-
-</span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>InputField 키보드 엔터 처리</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                Describe
-
-
-InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.
-
-
-InputField Keyboard Event Listener 등록
-
-
-
-  
-    [SerializeField] TMP_InputField _inputField;
-
-private void Start() {
-  _inputF...
+    일단 영수증 검증에 사용할 API 계정을 만들어야 한다. Google Play Console -&gt; 설정 -&gt; API 액세스에 가서 새 서비스 계정 만들기를 클릭해서 계정 한개를 생성해 준다. 아마 아래와 같은 팝업창이 생성되고 Googole C...
               </p>
             </div>
           </div>
@@ -1235,15 +1364,15 @@ private void Start() {
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/posts/unity-firebase-cloudfunction-iapverify/" class="btn btn-outline-primary">
-    <p>Firebase CloudFunction 사용해서 인앱결제 검증하기</p>
+  <a href="/posts/unity-firebase-cloudfunction-iapverify-1/" class="btn btn-outline-primary">
+    <p>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-</p>
   </a>
   
 
   
-  <span class="btn btn-outline-primary disabled">
-    <p>-</p>
-  </span>
+  <a href="/posts/unity-memo-copy/" class="btn btn-outline-primary">
+    <p>Code Convension</p>
+  </a>
   
 
 </div>
@@ -1370,6 +1499,55 @@ private void Start() {
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1408,25 +1586,6 @@ private void Start() {
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -1466,6 +1625,31 @@ private void Start() {
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1475,6 +1659,62 @@ private void Start() {
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1531,7 +1771,13 @@ private void Start() {
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
+        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
+      
+        
         <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
+        <a class="post-tag" href="/tags/convension/">convension</a>
       
         
         <a class="post-tag" href="/tags/fcm/">fcm</a>

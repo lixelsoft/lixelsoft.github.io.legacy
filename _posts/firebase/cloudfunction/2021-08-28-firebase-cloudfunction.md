@@ -10,6 +10,7 @@ mermaid: true
 
 
 # Install
+___
 
 ```bash
 # firebase cli 설치.
@@ -22,7 +23,7 @@ $ mkdir Test && cd ./Test
 $ firebase init
 ```
 
-
+## Firebase Install
 * 아래와 같이 어떤 features를 선택할지 정해주는 메뉴가 나오는데 여기서 `Functions`를 선택해준다.<br/>
   주의할 점은 `스페이스바`로 선택을 해주고 `엔터키`로 넘어가줘야함<br/>
 ![image](https://user-images.githubusercontent.com/56714476/131238987-dd144a55-dd60-4bd8-a684-ade1ba68e71b.png)
@@ -32,6 +33,8 @@ $ firebase init
 
 
 # Usage
+___
+
 * 설치가 완료되고 나면 여러 파일들이 생성이 되는데 이중에서 `functions/index.js` 파일을 오픈해 준다.<br>
   코드에서 `"exports.helloWorld"` 이 부분이 예제코드라고 할 수 있는데 이 부분을 주석해제 시켜 준다.
 
@@ -46,7 +49,7 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
   response.send("Hello from Firebase!");
 });
 ```
-
+## Local Test
 * 로컬에서 테스트를 진행하려면 아래 명령어를 입력하면 된다.
   서버에 올리기 전에 먼저 로컬에서 테스트 후 올려보는것이 좋다.
 ```bash
@@ -59,6 +62,7 @@ $ firebase serve
 
 
 # Deploy
+___
 
 * 아래 명령어를 입력해서 실제로 서버에 올리면 완료.
 ```bash
@@ -75,7 +79,8 @@ $ firebase deploy --only functions:함수명
 
 
 # 지역 변경
-
+___
+## Change Region
 * 기본으로 함수를 배포하게 되면 `us-cental1` 지역으로 설정 되는데 지역을 변경하려면 함수 배포 전에 코드를 수정해주어야 한다.
   지역을 서울로 변경하고 싶으면 `region('asia-northeast3')` 이 부분을 추가하고 배포하면 된다.<br>
 

@@ -23,25 +23,25 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Firebase CloudFunction 사용해서 인앱결제 검증하기" />
+<meta property="og:title" content="Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-" />
 <meta name="author" content="lixelsoft" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="작성중 …" />
-<meta property="og:description" content="작성중 …" />
-<link rel="canonical" href="https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify/" />
-<meta property="og:url" content="https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify/" />
+<meta name="description" content="Create API Key" />
+<meta property="og:description" content="Create API Key" />
+<link rel="canonical" href="https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/" />
+<meta property="og:url" content="https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/" />
 <meta property="og:site_name" content="Lixelsoft" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-08-28T01:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Firebase CloudFunction 사용해서 인앱결제 검증하기" />
+<meta property="twitter:title" content="Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify/","headline":"Firebase CloudFunction 사용해서 인앱결제 검증하기","dateModified":"2021-08-28T01:00:00+09:00","datePublished":"2021-08-28T01:00:00+09:00","description":"작성중 …","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify/"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"lixelsoft"},"url":"https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/","headline":"Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-","dateModified":"2021-08-28T01:00:00+09:00","datePublished":"2021-08-28T01:00:00+09:00","description":"Create API Key","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Firebase CloudFunction 사용해서 인앱결제 검증하기 | Lixelsoft
+  <title>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1- | Lixelsoft
   </title>
 
   <!--
@@ -296,7 +296,7 @@
       
 
       
-        <span>Firebase CloudFunction 사용해서 인앱결제 검증하기</span>
+        <span>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-</span>
       
 
     </span><!-- endof #breadcrumb -->
@@ -347,6 +347,20 @@
 
 
 
+  
+
+  
+
+  <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+  
+  
+
+  
+
+  
+
+
+
 <!-- return -->
 <div class="row">
 
@@ -354,7 +368,7 @@
 
     <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
-      <h1 data-toc-skip>Firebase CloudFunction 사용해서 인앱결제 검증하기</h1>
+      <h1 data-toc-skip>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-</h1>
 
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
@@ -405,7 +419,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="4 words">1 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="475 words">2 min</span>
 
 
           <!-- page views -->
@@ -413,7 +427,7 @@
 
           <!-- HITS -->
           &nbsp;
-          <a href="https://hits.seeyoufarm.com"><img min-width="94" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify/%2F&count_bg=%23AC58FA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false"/></a> 
+          <a href="https://hits.seeyoufarm.com"><img min-width="94" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/%2F&count_bg=%23AC58FA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false"/></a> 
 
         </div>
 
@@ -423,7 +437,49 @@
 
         
 
-        <p>작성중 …</p>
+        <h1 id="create-api-key">Create API Key</h1>
+<hr />
+
+<h2 id="google-play-console-서비스-계정-등록">Google Play Console 서비스 계정 등록</h2>
+<ul>
+  <li>
+    <p>일단 영수증 검증에 사용할 API 계정을 만들어야 한다. Google Play Console -&gt; 설정 -&gt; API 액세스에 가서 <code class="language-plaintext highlighter-rouge">새 서비스 계정 만들기</code>를 클릭해서 계정 한개를 생성해 준다. 아마 아래와 같은 팝업창이 생성되고 <code class="language-plaintext highlighter-rouge">Googole Cloud Platform</code>으로 이동하라고 나올텐데 해당 사이트로 이동해준다.
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131425441-8b6b2025-ea72-4da5-a2c3-e6d29f13f1dd.png" alt="image" /></p>
+  </li>
+  <li>
+    <p>Google Cloud Platform에서 <code class="language-plaintext highlighter-rouge">서비스 계정 만들기</code>를 클릭해 주고 새로운 계정을 생성해 준다.</p>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">서비스 계정 세부정보</code>에서 계정 정보를 기입해 준다.
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131425761-6890d64c-66fa-4ad2-b211-14d0781047d4.png" alt="image" /></li>
+      <li><code class="language-plaintext highlighter-rouge">액세스 권한 부여</code>에서 <code class="language-plaintext highlighter-rouge">편집자</code>를 선택해서 추가해준다.
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131425897-a43fc3c7-03a4-4243-8dce-bcc94340c60b.png" alt="image" /></li>
+      <li><code class="language-plaintext highlighter-rouge">"3"</code>번은 공란으로 하고 완료를 클릭해주면 아래와 같이 계정이 생성된다.
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131426172-b7bc2569-95b6-4d25-8674-c5396b25fb18.png" alt="image" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="key-download">Key Download</h2>
+<ul>
+  <li>API에서 사용할 계정 Key를 Download해 줘야한다. 생성 된 키를 클릭하고 새로운 키 만들기를 선택해 준다.</li>
+  <li>키 유형은 <code class="language-plaintext highlighter-rouge">JSON</code>으로 선택해서 다운로드를 받으면 키생성이 완료된다.
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131426437-fcc1515a-7e26-44aa-8709-8f21109fc671.png" alt="image" /></li>
+</ul>
+
+<h1 id="권한-부여">권한 부여</h1>
+<hr />
+
+<h2 id="서비스-계정-권한-부여">서비스 계정 권한 부여</h2>
+<ul>
+  <li>Google Play Console 페이지로 돌아와서 서비스 계정을 보면 조금전에 만든 계정이 생성된 것을 볼 수 있다. 이제 이 계정에 앱 재무관련 정보를 접근할 수 있도록 권한을 부여해야 한다.</li>
+  <li><code class="language-plaintext highlighter-rouge">액세스 권한 부여</code>를 클릭해서 권한 설정 페이지로 들어간다.
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131426993-e9cfb537-9269-41e6-ac80-fb0ecc024179.png" alt="image" /></li>
+  <li>앱 권한에서 권한을 부여할 앱 추가해주고 <code class="language-plaintext highlighter-rouge">계정 권한</code>에서 <code class="language-plaintext highlighter-rouge">재무 데이터</code>에 체크를 반드시 해줘야 한다.
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/56714476/131441312-5a0f5fb7-c3db-4b5e-a018-f747aea6ee10.png" alt="image" /></li>
+  <li>밑에 변경사항 저장을 하면 이제 인앱결제 시 사용할 계정생성이 완료되었다.</li>
+</ul>
+
+<p>작성중 …</p>
 
 
       </div>
@@ -484,19 +540,19 @@
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Firebase CloudFunction 사용해서 인앱결제 검증하기 - Lixelsoft&url=https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify/" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=Firebase CloudFunction 사용해서 인앱결제 검증하기 -1- - Lixelsoft&url=https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Firebase CloudFunction 사용해서 인앱결제 검증하기 - Lixelsoft&u=https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify/" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Firebase CloudFunction 사용해서 인앱결제 검증하기 -1- - Lixelsoft&u=https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text=Firebase CloudFunction 사용해서 인앱결제 검증하기 - Lixelsoft&url=https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify/" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=Firebase CloudFunction 사용해서 인앱결제 검증하기 -1- - Lixelsoft&url=https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -559,12 +615,12 @@
         
         
         
-        <li><a href="/posts/unity-memo-inputfield/">InputField 키보드 엔터 처리</a></li>
+        <li><a href="/posts/unity-processdiagnostics/">Process 실행 시간 확인</a></li>
       
         
         
         
-        <li><a href="/posts/unity-processdiagnostics/">Process 실행 시간 확인</a></li>
+        <li><a href="/posts/unity-memo-inputfield/">InputField 키보드 엔터 처리</a></li>
       
 
       </ul>
@@ -623,6 +679,55 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -661,25 +766,6 @@
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -719,6 +805,31 @@
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -728,6 +839,62 @@
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -789,7 +956,13 @@
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
+        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
+      
+        
         <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
+        <a class="post-tag" href="/tags/convension/">convension</a>
       
         
         <a class="post-tag" href="/tags/fcm/">fcm</a>
@@ -803,6 +976,11 @@
   
   </div> <!-- .access -->
 
+  
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">Contents</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
   
 
 </div> <!-- #panel-wrapper -->
@@ -837,6 +1015,32 @@
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -1058,6 +1262,7 @@ namespace lixelsoft {
 
                 Install
 
+
 1
 2
 3
@@ -1072,7 +1277,7 @@ $ npm install -g firebase-tools
 $ firebase login
 # 새로운 프로젝트 폴더를 생성하고 해당 폴더로 이동.
 $ mkdir Test &amp;&amp; cd ./Test
-# 해당 프로젝트 폴더에서 firebase ...
+# 해당 프로젝트 폴더에서 firebase...
               </p>
             </div>
           </div>
@@ -1116,6 +1321,16 @@ $ mkdir Test &amp;&amp; cd ./Test
 
 </div> <!-- .row -->
 
+
+
+  <!-- image lazy load: https://github.com/ApoorvSaxena/lozad.js -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
+<script type="text/javascript">
+  const imgs = document.querySelectorAll('.post-content img');
+  const observer = lozad(imgs);
+  observer.observe();
+</script>
 
 
 
@@ -1220,6 +1435,55 @@ $ mkdir Test &amp;&amp; cd ./Test
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1258,25 +1522,6 @@ $ mkdir Test &amp;&amp; cd ./Test
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
       
         
         
@@ -1316,6 +1561,31 @@ $ mkdir Test &amp;&amp; cd ./Test
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1325,6 +1595,62 @@ $ mkdir Test &amp;&amp; cd ./Test
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1381,7 +1707,13 @@ $ mkdir Test &amp;&amp; cd ./Test
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
+        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
+      
+        
         <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+      
+        
+        <a class="post-tag" href="/tags/convension/">convension</a>
       
         
         <a class="post-tag" href="/tags/fcm/">fcm</a>
