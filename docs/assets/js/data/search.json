@@ -1,6 +1,51 @@
 [
   
   {
+    "title": "emoji 모음 사이트",
+    "url": "/posts/unity-github-emoji/",
+    "categories": "Memo, github",
+    "tags": "github, emoji",
+    "date": "2021-09-04 05:17:00 +0900",
+    
+
+
+
+
+
+    "snippet": "🖥 Site😀😃😄😁😆⚽🎮✅🇰🇷  https://wepplication.github.io/tools/charMap/#emoji"
+  },
+  
+  {
+    "title": "2021-09-04 Devlog",
+    "url": "/posts/devlog-20210904/",
+    "categories": "DevLog, 2021",
+    "tags": "devlog",
+    "date": "2021-09-04 03:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "💻 Done List✅ CloudFunction scheduler 구현.  매일 특정 시간에 유저 전체에게 우편함 주는 함수 구현 완료.  Firebase CloudFunction Scheduler 사용.✅ 계정 2개 생성되는 버그  내부테스트에 새로운 버전 올리면 구글쪽에서 새로 계정을 생성하는듯..✅ IAP 매일 2배 기능 구현.  영수증 검증 CloudFunction에서 체크해서 2배로 보상 주기 구현.  UI에서도 구매 유무에 따라서 2배 이미지 On/Off.✅ 폰에서 Firebase Dictionary&amp;lt;s..."
+  },
+  
+  {
+    "title": "nodejs aes-128-cbc",
+    "url": "/posts/nodejs-memo/",
+    "categories": "Nodejs, Nodejs Memo",
+    "tags": "nodejs, crypto",
+    "date": "2021-09-02 00:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "Memoconst crypto = require(&quot;crypto&quot;);const algo = &#39;aes-128-cbc&#39;;const key = &quot;keykeykeykeykey&quot;;const iv = &quot;iviv&quot;;const value = &#39;HelloWorld&#39;;const keyBuffer = new Buffer.from(crypto.createHash(&#39;md5&#39;).update(key).digest(&#39;hex&#39;),&quot;hex&q..."
+  },
+  
+  {
     "title": "Firebase CloudFunction Security",
     "url": "/posts/firebase-cloudfunction-security/",
     "categories": "Firebase, CloudFunction",
@@ -107,9 +152,9 @@
   
   {
     "title": "Process 실행 시간 확인",
-    "url": "/posts/unity-processdiagnostics/",
-    "categories": "Memo",
-    "tags": "unity, csharp",
+    "url": "/posts/unity-c-processdiagnostics/",
+    "categories": "Memo, c#",
+    "tags": "c#",
     "date": "2021-08-26 05:17:00 +0900",
     
 

@@ -2,8 +2,8 @@
 title: Process 실행 시간 확인
 author: Lixelsoft
 date: 2021-08-26 05:17:00 +09:00
-categories: [Memo]
-tags: [unity, csharp]
+categories: [Memo, c#]
+tags: [c#]
 math: true
 mermaid: true
 

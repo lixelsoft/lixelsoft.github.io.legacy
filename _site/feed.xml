@@ -4,7 +4,7 @@
   <id>https://lixelsoft.github.io/</id>
   <title>Lixelsoft</title>
   <subtitle>Lixelsoft Tech Blog</subtitle>
-  <updated>2021-09-01T07:22:49+09:00</updated>
+  <updated>2021-09-04T21:32:28+09:00</updated>
   <author>
     <name>Lixelsoft</name>
     <uri>https://lixelsoft.github.io/</uri>
@@ -17,6 +17,157 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>emoji 모음 사이트</title>
+    <link href="https://lixelsoft.github.io/posts/unity-github-emoji/" rel="alternate" type="text/html" title="emoji 모음 사이트" />
+    <published>2021-09-04T05:17:00+09:00</published>
+  
+    <updated>2021-09-04T05:17:00+09:00</updated>
+  
+    <id>https://lixelsoft.github.io/posts/unity-github-emoji/</id>
+    <content src="https://lixelsoft.github.io/posts/unity-github-emoji/" />
+    <author>
+      <name>Lixelsoft</name>
+    </author>
+
+  
+    
+    <category term="Memo" />
+    
+    <category term="github" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      🖥 Site
+😀😃😄😁😆⚽🎮✅🇰🇷
+
+  https://wepplication.github.io/tools/charMap/#emoji
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>2021-09-04 Devlog</title>
+    <link href="https://lixelsoft.github.io/posts/devlog-20210904/" rel="alternate" type="text/html" title="2021-09-04 Devlog" />
+    <published>2021-09-04T03:00:00+09:00</published>
+  
+    <updated>2021-09-04T03:00:00+09:00</updated>
+  
+    <id>https://lixelsoft.github.io/posts/devlog-20210904/</id>
+    <content src="https://lixelsoft.github.io/posts/devlog-20210904/" />
+    <author>
+      <name>Lixelsoft</name>
+    </author>
+
+  
+    
+    <category term="DevLog" />
+    
+    <category term="2021" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      💻 Done List
+
+
+✅ CloudFunction scheduler 구현.
+
+  매일 특정 시간에 유저 전체에게 우편함 주는 함수 구현 완료.
+  Firebase CloudFunction Scheduler 사용.
+
+
+✅ 계정 2개 생성되는 버그
+
+  내부테스트에 새로운 버전 올리면 구글쪽에서 새로 계정을 생성하는듯..
+
+
+✅ IAP 매일 2배 기능 구현.
+
+  영수증 검증 CloudFunction에서 체크해서 2배로 보상 주기 구현.
+  UI에서도 구매 유무에 따라서 2배 이미지 On/Off.
+
+
+✅ 폰에서 Firebase Dictionary&amp;lt;string, DateTime&amp;gt; AOT Error.
+
+  컴터에서는 잘되는데 폰에서 에러남.
+  Dictionary&amp;lt;string, object...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>nodejs aes-128-cbc</title>
+    <link href="https://lixelsoft.github.io/posts/nodejs-memo/" rel="alternate" type="text/html" title="nodejs aes-128-cbc" />
+    <published>2021-09-02T00:00:00+09:00</published>
+  
+    <updated>2021-09-02T00:00:00+09:00</updated>
+  
+    <id>https://lixelsoft.github.io/posts/nodejs-memo/</id>
+    <content src="https://lixelsoft.github.io/posts/nodejs-memo/" />
+    <author>
+      <name>Lixelsoft</name>
+    </author>
+
+  
+    
+    <category term="Nodejs" />
+    
+    <category term="Nodejs Memo" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Memo
+
+const crypto = require("crypto");
+
+const algo = 'aes-128-cbc';
+const key = "keykeykeykeykey";
+const iv = "iviv";
+const value = 'HelloWorld';
+const keyBuffer = new Buffer.from(crypto.createHash('md5').update(key).digest('hex'),"hex");
+const ivBuffer = new Buffer.from(crypto.createHash('md5').update(iv).digest('hex'),"hex");
+const textBuffer = new Buffer.from(value);
+
+// Encryption
+let ci...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -129,157 +280,6 @@ Convension
 
 namespace Lixelsoft {
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Firebase CloudFunction 시작하기</title>
-    <link href="https://lixelsoft.github.io/posts/firebase-cloudfunction/" rel="alternate" type="text/html" title="Firebase CloudFunction 시작하기" />
-    <published>2021-08-29T01:00:00+09:00</published>
-  
-    <updated>2021-08-31T20:18:43+09:00</updated>
-  
-    <id>https://lixelsoft.github.io/posts/firebase-cloudfunction/</id>
-    <content src="https://lixelsoft.github.io/posts/firebase-cloudfunction/" />
-    <author>
-      <name>Lixelsoft</name>
-    </author>
-
-  
-    
-    <category term="Firebase" />
-    
-    <category term="CloudFunction" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Install
-
-
-# firebase cli 설치.
-$ npm install -g firebase-tools
-# 구글 계정으로 로그인.
-$ firebase login
-# 새로운 프로젝트 폴더를 생성하고 해당 폴더로 이동.
-$ mkdir Test &amp;amp;&amp;amp; cd ./Test
-# 해당 프로젝트 폴더에서 firebase initialize를 해준다.
-$ firebase init
-
-
-Firebase Install
-
-  아래와 같이 어떤 features를 선택할지 정해주는 메뉴가 나오는데 여기서 Functions를 선택해준다.
-주의할 점은 스페이스바로 선택을 해주고 엔터키로 넘어가줘야함
-
-  다음으로 프로젝트를 선택해주고 나머지 질문에 자신에게 맞는 설정을 선택해주면 된다.
-
-
-
-Usage
-
-
-
-  설...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-</title>
-    <link href="https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/" rel="alternate" type="text/html" title="Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-" />
-    <published>2021-08-28T01:00:00+09:00</published>
-  
-    <updated>2021-08-28T01:00:00+09:00</updated>
-  
-    <id>https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/</id>
-    <content src="https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/" />
-    <author>
-      <name>Lixelsoft</name>
-    </author>
-
-  
-    
-    <category term="Unity" />
-    
-    <category term="Unity Firebase" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Create API Key
-
-
-Google Play Console 서비스 계정 등록
-
-  
-    일단 영수증 검증에 사용할 API 계정을 만들어야 한다. Google Play Console -&amp;gt; 설정 -&amp;gt; API 액세스에 가서 새 서비스 계정 만들기를 클릭해서 계정 한개를 생성해 준다. 아마 아래와 같은 팝업창이 생성되고 Googole Cloud Platform으로 이동하라고 나올텐데 해당 사이트로 이동해준다.
-
-  
-  
-    Google Cloud Platform에서 서비스 계정 만들기를 클릭해 주고 새로운 계정을 생성해 준다.
-    
-      서비스 계정 세부정보에서 계정 정보를 기입해 준다.
-
-      액세스 권한 부여에서 편집자를 선택해서 추가해준다.
-
-      "3"번은...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Firebase CloudFunction 사용해서 푸시기능 구현하기</title>
-    <link href="https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-fcm/" rel="alternate" type="text/html" title="Firebase CloudFunction 사용해서 푸시기능 구현하기" />
-    <published>2021-08-28T01:00:00+09:00</published>
-  
-    <updated>2021-08-28T01:00:00+09:00</updated>
-  
-    <id>https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-fcm/</id>
-    <content src="https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-fcm/" />
-    <author>
-      <name>Lixelsoft</name>
-    </author>
-
-  
-    
-    <category term="Unity" />
-    
-    <category term="Unity Firebase" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      작성중 …
-
     </summary>
   
 
