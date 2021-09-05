@@ -41,35 +41,35 @@ exports.addMessage = functions.https.onCall((data, context) => {
 });
 ```
 ## Unity
-> 참고: 기본 `us-central1` 외의 위치에서 실행 중인 함수를 호출하려면 초기화 시 적절한 값으로 설정해야 합니다. 예를 들어 Android에서는 getInstance(FirebaseApp app, String `region`)를 사용하여 초기화합니다.
+- ❗ 참고: 기본 `us-central1` 외의 위치에서 실행 중인 함수를 호출하려면 초기화 시 적절한 값으로 설정해야 합니다. 예를 들어 Android에서는 getInstance(FirebaseApp app, String `region`)를 사용하여 초기화합니다.
+
 ```cs
-  public class FirebaseCloudFunction {
+public class FirebaseCloudFunction {
 
-    private FirebaseFunctions functions;
-    public FirebaseCloudFunction() {
-      // 초기화
-      this.functions = FirebaseFunctions.GetInstance(FirebaseApp.DefaultInstance, "asia-northeast3");
-    }
-
-    public async Task TestFunction(string text) {
-      // Create the arguments to the callable function.
-      var data = new Dictionary<string, object>();
-      data["text"] = text;
-      data["push"] = true;
-
-      // Call the function and extract the operation from the result.
-      var func = functions.GetHttpsCallable("addMessage");
-      await func.CallAsync(data).ContinueWith(task => {
-        if (task.IsFaulted || task.IsCanceled) {
-          DebugX.Log($"<color=#e74c3c>[Lixelsoft]</color> Failed");
-        } else {
-          DebugX.Log($"<color=#2ecc71>[Lixelsoft]</color> Success");
-          DebugX.Log($"<color=#2ecc71>[Lixelsoft]</color> Data : {task.Result.Data.ToString()}");
-        }
-      });
-    }
+  private FirebaseFunctions functions;
+  public FirebaseCloudFunction() {
+    // 초기화
+    this.functions = FirebaseFunctions.GetInstance(FirebaseApp.DefaultInstance, "asia-northeast3");
   }
 
+  public async Task TestFunction(string text) {
+    // Create the arguments to the callable function.
+    var data = new Dictionary<string, object>();
+    data["text"] = text;
+    data["push"] = true;
+
+    // Call the function and extract the operation from the result.
+    var func = functions.GetHttpsCallable("addMessage");
+    await func.CallAsync(data).ContinueWith(task => {
+      if (task.IsFaulted || task.IsCanceled) {
+        DebugX.Log($"<color=#e74c3c>[Lixelsoft]</color> Failed");
+      } else {
+        DebugX.Log($"<color=#2ecc71>[Lixelsoft]</color> Success");
+        DebugX.Log($"<color=#2ecc71>[Lixelsoft]</color> Data : {task.Result.Data.ToString()}");
+      }
+    });
+  }
+}
 ```
 
 

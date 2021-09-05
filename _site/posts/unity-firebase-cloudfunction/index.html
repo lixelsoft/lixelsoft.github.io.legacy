@@ -37,7 +37,7 @@
 <meta property="twitter:title" content="Firebase CloudFunction 앱에서 호출하기" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"url":"https://lixelsoft.github.io/posts/unity-firebase-cloudfunction/","headline":"Firebase CloudFunction 앱에서 호출하기","datePublished":"2021-08-28T01:00:00+09:00","dateModified":"2021-08-28T01:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-firebase-cloudfunction/"},"author":{"@type":"Person","name":"lixelsoft"},"description":"Intro 기존에는 유니티에서 WebRequest로 구현했었는데 Firebase github를 보다가 라이브러리로도 구현할 수 있는 거 보고 작성하게됨. ❗ 유니티가 아직 AppCheck기능을 지원하지 않아 프로젝트에 적용하지는 않음. Install 먼저 유니티에 FirebaseFirestore.unitypackage를 Import해준다.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/unity-firebase-cloudfunction/"},"url":"https://lixelsoft.github.io/posts/unity-firebase-cloudfunction/","author":{"@type":"Person","name":"lixelsoft"},"description":"Intro 기존에는 유니티에서 WebRequest로 구현했었는데 Firebase github를 보다가 라이브러리로도 구현할 수 있는 거 보고 작성하게됨. ❗ 유니티가 아직 AppCheck기능을 지원하지 않아 프로젝트에 적용하지는 않음. Install 먼저 유니티에 FirebaseFirestore.unitypackage를 Import해준다.","dateModified":"2021-08-28T01:00:00+09:00","datePublished":"2021-08-28T01:00:00+09:00","headline":"Firebase CloudFunction 앱에서 호출하기","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -419,7 +419,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="364 words">2 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="366 words">2 min</span>
 
 
           <!-- page views -->
@@ -489,13 +489,11 @@
 <span class="p">});</span>
 </pre></td></tr></tbody></table></code></div></div>
 <h2 id="unity">Unity</h2>
-<blockquote>
-  <p>참고: 기본 <code class="language-plaintext highlighter-rouge">us-central1</code> 외의 위치에서 실행 중인 함수를 호출하려면 초기화 시 적절한 값으로 설정해야 합니다. 예를 들어 Android에서는 getInstance(FirebaseApp app, String <code class="language-plaintext highlighter-rouge">region</code>)를 사용하여 초기화합니다.
-```cs
-  public class FirebaseCloudFunction {</p>
-</blockquote>
+<ul>
+  <li>❗ 참고: 기본 <code class="language-plaintext highlighter-rouge">us-central1</code> 외의 위치에서 실행 중인 함수를 호출하려면 초기화 시 적절한 값으로 설정해야 합니다. 예를 들어 Android에서는 getInstance(FirebaseApp app, String <code class="language-plaintext highlighter-rouge">region</code>)를 사용하여 초기화합니다.</li>
+</ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-cs highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -518,32 +516,36 @@
 21
 22
 23
-</pre></td><td class="rouge-code"><pre>private FirebaseFunctions functions;
-public FirebaseCloudFunction() {
-  // 초기화
-  this.functions = FirebaseFunctions.GetInstance(FirebaseApp.DefaultInstance, "asia-northeast3");
-}
+24
+25
+26
+</pre></td><td class="rouge-code"><pre><span class="k">public</span> <span class="k">class</span> <span class="nc">FirebaseCloudFunction</span> <span class="p">{</span>
 
-public async Task TestFunction(string text) {
-  // Create the arguments to the callable function.
-  var data = new Dictionary&lt;string, object&gt;();
-  data["text"] = text;
-  data["push"] = true;
+  <span class="k">private</span> <span class="n">FirebaseFunctions</span> <span class="n">functions</span><span class="p">;</span>
+  <span class="k">public</span> <span class="nf">FirebaseCloudFunction</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// 초기화</span>
+    <span class="k">this</span><span class="p">.</span><span class="n">functions</span> <span class="p">=</span> <span class="n">FirebaseFunctions</span><span class="p">.</span><span class="nf">GetInstance</span><span class="p">(</span><span class="n">FirebaseApp</span><span class="p">.</span><span class="n">DefaultInstance</span><span class="p">,</span> <span class="s">"asia-northeast3"</span><span class="p">);</span>
+  <span class="p">}</span>
 
-  // Call the function and extract the operation from the result.
-  var func = functions.GetHttpsCallable("addMessage");
-  await func.CallAsync(data).ContinueWith(task =&gt; {
-    if (task.IsFaulted || task.IsCanceled) {
-      DebugX.Log($"&lt;color=#e74c3c&gt;[Lixelsoft]&lt;/color&gt; Failed");
-    } else {
-      DebugX.Log($"&lt;color=#2ecc71&gt;[Lixelsoft]&lt;/color&gt; Success");
-      DebugX.Log($"&lt;color=#2ecc71&gt;[Lixelsoft]&lt;/color&gt; Data : {task.Result.Data.ToString()}");
-    }
-  });
-}   }
+  <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">TestFunction</span><span class="p">(</span><span class="kt">string</span> <span class="n">text</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Create the arguments to the callable function.</span>
+    <span class="kt">var</span> <span class="n">data</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">object</span><span class="p">&gt;();</span>
+    <span class="n">data</span><span class="p">[</span><span class="s">"text"</span><span class="p">]</span> <span class="p">=</span> <span class="n">text</span><span class="p">;</span>
+    <span class="n">data</span><span class="p">[</span><span class="s">"push"</span><span class="p">]</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+
+    <span class="c1">// Call the function and extract the operation from the result.</span>
+    <span class="kt">var</span> <span class="n">func</span> <span class="p">=</span> <span class="n">functions</span><span class="p">.</span><span class="nf">GetHttpsCallable</span><span class="p">(</span><span class="s">"addMessage"</span><span class="p">);</span>
+    <span class="k">await</span> <span class="n">func</span><span class="p">.</span><span class="nf">CallAsync</span><span class="p">(</span><span class="n">data</span><span class="p">).</span><span class="nf">ContinueWith</span><span class="p">(</span><span class="n">task</span> <span class="p">=&gt;</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">task</span><span class="p">.</span><span class="n">IsFaulted</span> <span class="p">||</span> <span class="n">task</span><span class="p">.</span><span class="n">IsCanceled</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">DebugX</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"&lt;color=#e74c3c&gt;[Lixelsoft]&lt;/color&gt; Failed"</span><span class="p">);</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">DebugX</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"&lt;color=#2ecc71&gt;[Lixelsoft]&lt;/color&gt; Success"</span><span class="p">);</span>
+        <span class="n">DebugX</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"&lt;color=#2ecc71&gt;[Lixelsoft]&lt;/color&gt; Data : </span><span class="p">{</span><span class="n">task</span><span class="p">.</span><span class="n">Result</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="nf">ToString</span><span class="p">()}</span><span class="s">"</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
-
-<p>```</p>
 
 <h1 id="references">References</h1>
 <hr />
@@ -688,12 +690,22 @@ public async Task TestFunction(string text) {
         
         
         
-        <li><a href="/posts/unity-memo-copy/">Code Convension</a></li>
+        <li><a href="/posts/firebase-cloudfunction/">Firebase CloudFunction 시작하기</a></li>
       
         
         
         
-        <li><a href="/posts/firebase-cloudfunction/">Firebase CloudFunction 시작하기</a></li>
+        <li><a href="/posts/firebase-cloudfunction-security/">Firebase CloudFunction Security with Firebase Token</a></li>
+      
+        
+        
+        
+        <li><a href="/posts/devlog-20210905/">2021-09-05 Devlog</a></li>
+      
+        
+        
+        
+        <li><a href="/posts/unity-memo-copy/">Code Convension</a></li>
       
         
         
