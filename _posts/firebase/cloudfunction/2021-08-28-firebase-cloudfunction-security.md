@@ -1,5 +1,5 @@
 ---
-title: Firebase CloudFunction Security
+title: Firebase CloudFunction Security with Firebase Token
 author: lixelsoft
 date: 2021-08-31 06:00:00 +09:00
 categories: [Firebase, CloudFunction]

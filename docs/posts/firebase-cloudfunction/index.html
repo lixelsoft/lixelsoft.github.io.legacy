@@ -37,7 +37,7 @@
 <meta property="twitter:title" content="Firebase CloudFunction 시작하기" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"lixelsoft"},"url":"https://lixelsoft.github.io/posts/firebase-cloudfunction/","headline":"Firebase CloudFunction 시작하기","dateModified":"2021-08-31T20:18:43+09:00","datePublished":"2021-08-29T01:00:00+09:00","description":"Install","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/firebase-cloudfunction/"},"@context":"https://schema.org"}</script>
+{"url":"https://lixelsoft.github.io/posts/firebase-cloudfunction/","headline":"Firebase CloudFunction 시작하기","datePublished":"2021-08-29T01:00:00+09:00","dateModified":"2021-08-31T20:18:43+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/firebase-cloudfunction/"},"author":{"@type":"Person","name":"lixelsoft"},"description":"Install","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -448,7 +448,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="667 words">3 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="668 words">3 min</span>
 
 
           <!-- page views -->
@@ -547,9 +547,9 @@
 3
 4
 </pre></td><td class="rouge-code"><pre><span class="c"># 모든 함수를 서버에 올림</span>
-<span class="nv">$ </span>firebase deploy <span class="nt">--only</span> functions
+<span class="nv">$ </span>firebase deploy <span class="nt">--only</span> <span class="s2">"functions"</span>
 <span class="c"># 특정 함수만 서버에 올림</span>
-<span class="nv">$ </span>firebase deploy <span class="nt">--only</span> functions:함수명
+<span class="nv">$ </span>firebase deploy <span class="nt">--only</span> <span class="s2">"functions:함수명"</span>
 </pre></td></tr></tbody></table></code></div>    </div>
   </li>
   <li>명령어를 실행하고 나서 Firebase 페이지로 가보게 되면 Cloud Function이 생성된 것을 알 수 있다.
@@ -803,26 +803,6 @@
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -878,29 +858,6 @@
     
     
       
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -931,20 +888,10 @@
     
     
     
-  
-    
-    
-    
-    
       
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -961,11 +908,6 @@
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -994,6 +936,41 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1007,6 +984,23 @@
     
     
       
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1034,29 +1028,6 @@
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1081,7 +1052,41 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1102,19 +1107,10 @@
     
     
     
-      
-    
   
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1134,16 +1130,13 @@
 
       
         
-        <a class="post-tag" href="/tags/unity/">unity</a>
-      
-        
         <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
-        <a class="post-tag" href="/tags/c/">c#</a>
+        <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/csharp/">csharp</a>
+        <a class="post-tag" href="/tags/c/">c#</a>
       
         
         <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
@@ -1152,13 +1145,16 @@
         <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
+        <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/devlog/">devlog</a>
+      
+        
         <a class="post-tag" href="/tags/convension/">convension</a>
       
         
         <a class="post-tag" href="/tags/crypto/">crypto</a>
-      
-        
-        <a class="post-tag" href="/tags/devlog/">devlog</a>
       
         
         <a class="post-tag" href="/tags/emoji/">emoji</a>
@@ -1278,7 +1274,46 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
   
 
   
@@ -1364,6 +1399,58 @@
       
       
       <div class="card">
+        <a href="/posts/unity-firebase-cloudfunction/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Aug 28
+  
+
+  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction 앱에서 호출하기</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                Intro
+
+
+
+  기존에는 유니티에서 WebRequest로 구현했었는데 Firebase github를 보다가 라이브러리로도 구현할 수 있는 거 보고 작성하게됨.
+  ❗ 유니티가 아직 AppCheck기능을 지원하지 않아 프로젝트에 적용하지는 않음.
+
+
+Install
+
+  먼저 유니티에 FirebaseFirestore.unitypackage를 Impor...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
         <a href="/posts/firebase-cloudfunction-security/">
           <div class="card-body">
             <!--
@@ -1387,7 +1474,7 @@
   <i class="unloaded">2021-08-31T06:00:00+09:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction Security</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction Security with Firebase Token</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1417,7 +1504,7 @@ References
       
       
       <div class="card">
-        <a href="/posts/unity-firebase-cloudfunction-fcm/">
+        <a href="/posts/firebase-cloudfunction-security-appcheck/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1434,13 +1521,13 @@ References
   
 
   
-    Aug 28
+    Sep  5
   
 
-  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
+  <i class="unloaded">2021-09-05T06:00:00+09:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction 사용해서 푸시기능 구현하기</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction Security with AppCheck</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1449,56 +1536,19 @@ References
 
 
 
-                작성중 …
+                Intro
 
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/unity-firebase-cloudfunction-iapverify-1/">
-          <div class="card-body">
-            <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago small"
-  >
-
-  
-  
-
-  
-    Aug 28
-  
-
-  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
-
-</span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-</h3>
-            <div class="text-muted small">
-              <p>
-                
+이번에 새로 발표한 AppCheck기능을 사용해서 CloudFunction 호출의 보안을 강화할 수 있다.
+유니티는 아직 지원 안함…
 
 
 
+References
 
 
-                Create API Key
+  https://stackoverflow.com/questions/68043694/firebase-realtime-database-unity
 
 
-Google Play Console 서비스 계정 등록
-
-  
-    일단 영수증 검증에 사용할 API 계정을 만들어야 한다. Google Play Console -&gt; 설정 -&gt; API 액세스에 가서 새 서비스 계정 만들기를 클릭해서 계정 한개를 생성해 준다. 아마 아래와 같은 팝업창이 생성되고 Googole C...
               </p>
             </div>
           </div>
@@ -1521,8 +1571,8 @@ Google Play Console 서비스 계정 등록
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/posts/unity-firebase-cloudfunction-iapverify-1/" class="btn btn-outline-primary">
-    <p>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-</p>
+  <a href="/posts/unity-firebase-cloudfunction/" class="btn btn-outline-primary">
+    <p>Firebase CloudFunction 앱에서 호출하기</p>
   </a>
   
 
@@ -1671,26 +1721,6 @@ Google Play Console 서비스 계정 등록
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1746,29 +1776,6 @@ Google Play Console 서비스 계정 등록
     
     
       
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -1799,20 +1806,10 @@ Google Play Console 서비스 계정 등록
     
     
     
-  
-    
-    
-    
-    
       
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -1829,11 +1826,6 @@ Google Play Console 서비스 계정 등록
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -1862,6 +1854,41 @@ Google Play Console 서비스 계정 등록
     
     
     
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1875,6 +1902,23 @@ Google Play Console 서비스 계정 등록
     
     
       
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1902,29 +1946,6 @@ Google Play Console 서비스 계정 등록
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1949,29 +1970,6 @@ Google Play Console 서비스 계정 등록
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1993,20 +1991,65 @@ Google Play Console 서비스 계정 등록
         
         
 
-
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
-        <a class="post-tag" href="/tags/unity/">unity</a>
+        
+
+
+
       
         
         <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
-        <a class="post-tag" href="/tags/c/">c#</a>
+        <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/csharp/">csharp</a>
+        <a class="post-tag" href="/tags/c/">c#</a>
       
         
         <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
@@ -2015,13 +2058,16 @@ Google Play Console 서비스 계정 등록
         <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
+        <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/devlog/">devlog</a>
+      
+        
         <a class="post-tag" href="/tags/convension/">convension</a>
       
         
         <a class="post-tag" href="/tags/crypto/">crypto</a>
-      
-        
-        <a class="post-tag" href="/tags/devlog/">devlog</a>
       
         
         <a class="post-tag" href="/tags/emoji/">emoji</a>

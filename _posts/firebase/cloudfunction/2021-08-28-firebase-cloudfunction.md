@@ -67,9 +67,9 @@ ___
 * 아래 명령어를 입력해서 실제로 서버에 올리면 완료.
 ```bash
 # 모든 함수를 서버에 올림
-$ firebase deploy --only functions
+$ firebase deploy --only "functions"
 # 특정 함수만 서버에 올림
-$ firebase deploy --only functions:함수명
+$ firebase deploy --only "functions:함수명"
 ```
 
 * 명령어를 실행하고 나서 Firebase 페이지로 가보게 되면 Cloud Function이 생성된 것을 알 수 있다.

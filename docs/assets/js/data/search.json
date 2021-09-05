@@ -1,6 +1,36 @@
 [
   
   {
+    "title": "Firebase CloudFunction Security with AppCheck",
+    "url": "/posts/firebase-cloudfunction-security-appcheck/",
+    "categories": "Firebase, CloudFunction",
+    "tags": "firebase, cloudfunctio security",
+    "date": "2021-09-05 06:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "Intro이번에 새로 발표한 AppCheck기능을 사용해서 CloudFunction 호출의 보안을 강화할 수 있다.유니티는 아직 지원 안함…References  https://stackoverflow.com/questions/68043694/firebase-realtime-database-unity"
+  },
+  
+  {
+    "title": "2021-09-05 Devlog",
+    "url": "/posts/devlog-20210905/",
+    "categories": "DevLog, 2021",
+    "tags": "devlog",
+    "date": "2021-09-05 00:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "💻 Done List✅ 패키지 상품 구현  ✅ 유니티 Firebase CloudFunction 호출 구현  기존에는 WebRequest로 구현되어 있는데 이부분을 라이브러리 호출로 변경.  AppCheck가 유니티 지원 안해서 보류.✅ Unity UPM 제거  구글이 5월부터 UPM 지원을 안한다고 한 것을 이제 알았네… Firebase UPM으로 되어 있는거 지우고 .unitypackage로 새로 설치.  개귀찮…  Firebase sdk 7.2.0 -&amp;gt; 8.1.0 버전업시 빌드 에러 버그있는데 manual로 수..."
+  },
+  
+  {
     "title": "emoji 모음 사이트",
     "url": "/posts/unity-github-emoji/",
     "categories": "Memo, github",
@@ -46,7 +76,7 @@
   },
   
   {
-    "title": "Firebase CloudFunction Security",
+    "title": "Firebase CloudFunction Security with Firebase Token",
     "url": "/posts/firebase-cloudfunction-security/",
     "categories": "Firebase, CloudFunction",
     "tags": "firebase, cloudfunctio security",
@@ -88,6 +118,21 @@
 
 
     "snippet": "Install# firebase cli 설치.$ npm install -g firebase-tools# 구글 계정으로 로그인.$ firebase login# 새로운 프로젝트 폴더를 생성하고 해당 폴더로 이동.$ mkdir Test &amp;amp;&amp;amp; cd ./Test# 해당 프로젝트 폴더에서 firebase initialize를 해준다.$ firebase initFirebase Install  아래와 같이 어떤 features를 선택할지 정해주는 메뉴가 나오는데 여기서 Functions를 선택해준다.주의할 점은 ..."
+  },
+  
+  {
+    "title": "Firebase CloudFunction 앱에서 호출하기",
+    "url": "/posts/unity-firebase-cloudfunction/",
+    "categories": "Unity, Unity Firebase",
+    "tags": "unity, firebase, cloudfunction",
+    "date": "2021-08-28 01:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "Intro  기존에는 유니티에서 WebRequest로 구현했었는데 Firebase github를 보다가 라이브러리로도 구현할 수 있는 거 보고 작성하게됨.  ❗ 유니티가 아직 AppCheck기능을 지원하지 않아 프로젝트에 적용하지는 않음.Install  먼저 유니티에 FirebaseFirestore.unitypackage를 Import해준다.UsageCloudFunction// Saves a message to the Firebase Realtime Database but sanitizes the text by removing..."
   },
   
   {

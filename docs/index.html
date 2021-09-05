@@ -36,7 +36,7 @@
 <meta property="twitter:title" content="Lixelsoft" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Lixelsoft"},"url":"https://lixelsoft.github.io/","name":"Lixelsoft","headline":"Lixelsoft","sameAs":["https://github.com/Lixelsoft"],"description":"Lixelsoft Tech Blog","@type":"WebSite","@context":"https://schema.org"}</script>
+{"url":"https://lixelsoft.github.io/","headline":"Lixelsoft","sameAs":["https://github.com/Lixelsoft"],"name":"Lixelsoft","author":{"@type":"Person","name":"Lixelsoft"},"description":"Lixelsoft Tech Blog","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -366,6 +366,186 @@
 
   <div class="post-preview">
     <h1>
+      <a href="/posts/firebase-cloudfunction-security-appcheck/">Firebase CloudFunction Security with AppCheck</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Intro
+
+
+이번에 새로 발표한 AppCheck기능을 사용해서 CloudFunction 호출의 보안을 강화할 수 있다.
+유니티는 아직 지원 안함…
+
+
+
+References
+
+
+
+  https://stackoverflow.com/questions/68043694/firebase-realtime-database-unity
+
+
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sun, Sep  5, 2021,  6:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Sep  5
+  
+
+  <i class="unloaded">2021-09-05T06:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="44 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/devlog-20210905/">2021-09-05 Devlog</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        💻 Done List
+
+
+✅ 패키지 상품 구현
+
+  
+
+
+✅ 유니티 Firebase CloudFunction 호출 구현
+
+  기존에는 WebRequest로 구현되어 있는데 이부분을 라이브러리 호출로 변경.
+  AppCheck가 유니티 지원 안해서 보류.
+
+
+✅ Unity UPM 제거
+
+  구글이 5월부터 UPM 지원을 안한다고 한 것을 이제 알았네… ...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sun, Sep  5, 2021, 12:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Sep  5
+  
+
+  <i class="unloaded">2021-09-05T00:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="156 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
       <a href="/posts/unity-github-emoji/">emoji 모음 사이트</a>
     </h1>
 
@@ -623,7 +803,7 @@ const keyBuffer = new Buffer.from(crypt...
 
   <div class="post-preview">
     <h1>
-      <a href="/posts/firebase-cloudfunction-security/">Firebase CloudFunction Security</a>
+      <a href="/posts/firebase-cloudfunction-security/">Firebase CloudFunction Security with Firebase Token</a>
     </h1>
 
     <div class="post-content">
@@ -874,7 +1054,92 @@ $ mkdir Test &amp;&amp; cd ./Test
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="667 words">3 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="668 words">3 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/unity-firebase-cloudfunction/">Firebase CloudFunction 앱에서 호출하기</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Intro
+
+
+
+  기존에는 유니티에서 WebRequest로 구현했었는데 Firebase github를 보다가 라이브러리로도 구현할 수 있는 거 보고 작성하게됨.
+  ❗ 유니티가 아직 AppCheck기능을 지원하지 않아 프로젝트에 적용하지는 않음.
+
+
+Install
+
+  먼저 유니티에 FirebaseFirestore.unitypackage를 Impor...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sat, Aug 28, 2021,  1:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 28
+  
+
+  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="364 words">2 min</span>
 
 
         <!-- page views -->
@@ -956,252 +1221,6 @@ Google Play Console 서비스 계정 등록
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="475 words">2 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/unity-firebase-cloudfunction-fcm/">Firebase CloudFunction 사용해서 푸시기능 구현하기</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        작성중 …
-
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Sat, Aug 28, 2021,  1:00 AM +0900"
-  >
-
-  
-  
-
-  
-    Aug 28
-  
-
-  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
-
-</span>
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="4 words">1 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/unity-memo-inputfield/">InputField 키보드 엔터 처리</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Describe
-
-
-InputField 키보드의 status Listener를 등록한 후 해당 Event를 처리하면 된다.
-
-
-InputField Keyboard Event Listener 등록
-
-
-
-  
-    [SerializeField] TMP_InputField _inputField;
-
-private void Start() {
-  _inputF...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Fri, Aug 27, 2021, 10:00 AM +0900"
-  >
-
-  
-  
-
-  
-    Aug 27
-  
-
-  <i class="unloaded">2021-08-27T10:00:00+09:00</i>
-
-</span>
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="150 words">1 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/unity-memo-execapp/">앱에서 다른 앱 실행하기 (with 변수 전달)</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        Sender App
-
-
-  
-      public void SenderApp() {
-    AndroidJavaClass UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-    AndroidJavaObject currentActivity = jc.GetStatic&lt;An...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Fri, Aug 27, 2021, 12:03 AM +0900"
-  >
-
-  
-  
-
-  
-    Aug 27
-  
-
-  <i class="unloaded">2021-08-27T00:03:00+09:00</i>
-
-</span>
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="105 words">1 min</span>
 
 
         <!-- page views -->
@@ -1414,26 +1433,6 @@ private void Start() {
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1489,29 +1488,6 @@ private void Start() {
     
     
       
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -1542,20 +1518,10 @@ private void Start() {
     
     
     
-  
-    
-    
-    
-    
       
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -1572,11 +1538,6 @@ private void Start() {
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -1605,6 +1566,41 @@ private void Start() {
     
     
     
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -1618,6 +1614,23 @@ private void Start() {
     
     
       
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1645,29 +1658,6 @@ private void Start() {
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1692,7 +1682,41 @@ private void Start() {
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1713,19 +1737,10 @@ private void Start() {
     
     
     
-      
-    
   
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1745,16 +1760,13 @@ private void Start() {
 
       
         
-        <a class="post-tag" href="/tags/unity/">unity</a>
-      
-        
         <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
-        <a class="post-tag" href="/tags/c/">c#</a>
+        <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/csharp/">csharp</a>
+        <a class="post-tag" href="/tags/c/">c#</a>
       
         
         <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
@@ -1763,13 +1775,16 @@ private void Start() {
         <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
+        <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/devlog/">devlog</a>
+      
+        
         <a class="post-tag" href="/tags/convension/">convension</a>
       
         
         <a class="post-tag" href="/tags/crypto/">crypto</a>
-      
-        
-        <a class="post-tag" href="/tags/devlog/">devlog</a>
       
         
         <a class="post-tag" href="/tags/emoji/">emoji</a>
@@ -1908,26 +1923,6 @@ private void Start() {
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1983,29 +1978,6 @@ private void Start() {
     
     
       
-        
-        
-
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -2036,20 +2008,10 @@ private void Start() {
     
     
     
-  
-    
-    
-    
-    
       
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -2066,11 +2028,6 @@ private void Start() {
         
         
 
-  
-    
-    
-    
-    
   
     
     
@@ -2099,6 +2056,41 @@ private void Start() {
     
     
     
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
   
     
     
@@ -2112,6 +2104,23 @@ private void Start() {
     
     
       
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2139,29 +2148,6 @@ private void Start() {
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2186,29 +2172,6 @@ private void Start() {
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2230,20 +2193,65 @@ private void Start() {
         
         
 
-
-
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
-        <a class="post-tag" href="/tags/unity/">unity</a>
+        
+
+
+
       
         
         <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
-        <a class="post-tag" href="/tags/c/">c#</a>
+        <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/csharp/">csharp</a>
+        <a class="post-tag" href="/tags/c/">c#</a>
       
         
         <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
@@ -2252,13 +2260,16 @@ private void Start() {
         <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
+        <a class="post-tag" href="/tags/csharp/">csharp</a>
+      
+        
+        <a class="post-tag" href="/tags/devlog/">devlog</a>
+      
+        
         <a class="post-tag" href="/tags/convension/">convension</a>
       
         
         <a class="post-tag" href="/tags/crypto/">crypto</a>
-      
-        
-        <a class="post-tag" href="/tags/devlog/">devlog</a>
       
         
         <a class="post-tag" href="/tags/emoji/">emoji</a>
