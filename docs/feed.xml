@@ -5,8 +5,21 @@
     <description>Lixelsoft Tech Blog</description>
     <link>https://lixelsoft.github.io</link>
     <atom:link href="https://lixelsoft.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Sun, 05 Sep 2021 06:00:00 +0900</lastBuildDate>
+	<lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0900</lastBuildDate>
 	
+	<item>
+		<title>2021-09-06 Devlog</title>
+        
+        
+            <description>&lt;h1 id=&quot;-done-list&quot;&gt;💻 Done List&lt;/h1&gt;
+&lt;hr /&gt;
+</description>
+        
+        <pubDate>Mon, 06 Sep 2021 00:00:00 +0900</pubDate>
+        <link>https://lixelsoft.github.io/posts/devlog-20210906/</link>
+        <guid isPermaLink="true">https://lixelsoft.github.io/posts/devlog-20210906/</guid>
+      </item>
+    
 	<item>
 		<title>Firebase CloudFunction Security with AppCheck</title>
         
@@ -141,19 +154,6 @@
         <pubDate>Sat, 28 Aug 2021 01:00:00 +0900</pubDate>
         <link>https://lixelsoft.github.io/posts/unity-firebase-cloudfunction/</link>
         <guid isPermaLink="true">https://lixelsoft.github.io/posts/unity-firebase-cloudfunction/</guid>
-      </item>
-    
-	<item>
-		<title>Firebase CloudFunction 사용해서 인앱결제 검증하기 -1-</title>
-        
-        
-            <description>&lt;h1 id=&quot;create-api-key&quot;&gt;Create API Key&lt;/h1&gt;
-&lt;hr /&gt;
-</description>
-        
-        <pubDate>Sat, 28 Aug 2021 01:00:00 +0900</pubDate>
-        <link>https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/</link>
-        <guid isPermaLink="true">https://lixelsoft.github.io/posts/unity-firebase-cloudfunction-iapverify-1/</guid>
       </item>
     
   </channel>

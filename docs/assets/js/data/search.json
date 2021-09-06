@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "2021-09-06 Devlog",
+    "url": "/posts/devlog-20210906/",
+    "categories": "DevLog, 2021",
+    "tags": "devlog",
+    "date": "2021-09-06 00:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "💻 Done List✅ 데이터 변경 시 Firestore Listen으로 기능 구현  메모리 해킹을 방지하기 위해서 기존에 구현되어 있던 방식을 변경."
+  },
+  
+  {
     "title": "Firebase CloudFunction Security with AppCheck",
     "url": "/posts/firebase-cloudfunction-security-appcheck/",
     "categories": "Firebase, CloudFunction",
