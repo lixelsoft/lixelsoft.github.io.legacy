@@ -5,8 +5,93 @@
     <description>Lixelsoft Tech Blog</description>
     <link>https://lixelsoft.github.io</link>
     <atom:link href="https://lixelsoft.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Mon, 06 Sep 2021 00:00:00 +0900</lastBuildDate>
+	<lastBuildDate>Thu, 16 Sep 2021 10:00:00 +0900</lastBuildDate>
 	
+	<item>
+		<title>유니티에서 홀딩 버튼 구현하기.</title>
+        
+        
+            <description>&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+&lt;h2 id=&quot;ipointerdownhandler-ipointeruphandlder-인터페이스로-구현하기&quot;&gt;IPointerDownHandler, IPointerUpHandlder 인터페이스로 구현하기&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;public void OnPointerDown(PointerEventData eventData) : 버튼을 클릭/터치하는 순간 실행됨&lt;/li&gt;
+  &lt;li&gt;public void OnPointerUp(PointerEventData eventDate) : 버튼 클릭/터치를 떼는 순간 실행됨&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+        <pubDate>Thu, 16 Sep 2021 10:00:00 +0900</pubDate>
+        <link>https://lixelsoft.github.io/posts/unity-ui-holdbutton/</link>
+        <guid isPermaLink="true">https://lixelsoft.github.io/posts/unity-ui-holdbutton/</guid>
+      </item>
+    
+	<item>
+		<title>맥에서 Unity adb</title>
+        
+        
+            <description>&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+&lt;hr /&gt;
+</description>
+        
+        <pubDate>Thu, 16 Sep 2021 10:00:00 +0900</pubDate>
+        <link>https://lixelsoft.github.io/posts/unity-memo-adb/</link>
+        <guid isPermaLink="true">https://lixelsoft.github.io/posts/unity-memo-adb/</guid>
+      </item>
+    
+	<item>
+		<title>Firebase Analytics Events DebugView</title>
+        
+        
+            <description>&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;Firebase Analytics 이벤트 테스트할 떄 실시간으로 확인하려면 DebugView에서 확인을 해야한다.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+        <pubDate>Thu, 16 Sep 2021 01:00:00 +0900</pubDate>
+        <link>https://lixelsoft.github.io/posts/unity-firebase-analytics-events/</link>
+        <guid isPermaLink="true">https://lixelsoft.github.io/posts/unity-firebase-analytics-events/</guid>
+      </item>
+    
+	<item>
+		<title>2021-09-09 Devlog</title>
+        
+        
+            <description>&lt;h1 id=&quot;-done-list&quot;&gt;💻 Done List&lt;/h1&gt;
+&lt;hr /&gt;
+</description>
+        
+        <pubDate>Thu, 09 Sep 2021 00:00:00 +0900</pubDate>
+        <link>https://lixelsoft.github.io/posts/devlog-20210909/</link>
+        <guid isPermaLink="true">https://lixelsoft.github.io/posts/devlog-20210909/</guid>
+      </item>
+    
+	<item>
+		<title>2021-09-08 Devlog</title>
+        
+        
+            <description>&lt;h1 id=&quot;-done-list&quot;&gt;💻 Done List&lt;/h1&gt;
+&lt;hr /&gt;
+</description>
+        
+        <pubDate>Wed, 08 Sep 2021 00:00:00 +0900</pubDate>
+        <link>https://lixelsoft.github.io/posts/devlog-20210908/</link>
+        <guid isPermaLink="true">https://lixelsoft.github.io/posts/devlog-20210908/</guid>
+      </item>
+    
+	<item>
+		<title>2021-09-07 Devlog</title>
+        
+        
+            <description>&lt;h1 id=&quot;-done-list&quot;&gt;💻 Done List&lt;/h1&gt;
+&lt;hr /&gt;
+</description>
+        
+        <pubDate>Tue, 07 Sep 2021 00:00:00 +0900</pubDate>
+        <link>https://lixelsoft.github.io/posts/devlog-20210907/</link>
+        <guid isPermaLink="true">https://lixelsoft.github.io/posts/devlog-20210907/</guid>
+      </item>
+    
 	<item>
 		<title>2021-09-06 Devlog</title>
         
@@ -62,98 +147,6 @@
         <pubDate>Sat, 04 Sep 2021 05:17:00 +0900</pubDate>
         <link>https://lixelsoft.github.io/posts/unity-github-emoji/</link>
         <guid isPermaLink="true">https://lixelsoft.github.io/posts/unity-github-emoji/</guid>
-      </item>
-    
-	<item>
-		<title>2021-09-04 Devlog</title>
-        
-        
-            <description>&lt;h1 id=&quot;-done-list&quot;&gt;💻 Done List&lt;/h1&gt;
-&lt;hr /&gt;
-</description>
-        
-        <pubDate>Sat, 04 Sep 2021 03:00:00 +0900</pubDate>
-        <link>https://lixelsoft.github.io/posts/devlog-20210904/</link>
-        <guid isPermaLink="true">https://lixelsoft.github.io/posts/devlog-20210904/</guid>
-      </item>
-    
-	<item>
-		<title>nodejs aes-128-cbc</title>
-        
-        
-            <description>&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-</description>
-        
-        <pubDate>Thu, 02 Sep 2021 00:00:00 +0900</pubDate>
-        <link>https://lixelsoft.github.io/posts/nodejs-memo/</link>
-        <guid isPermaLink="true">https://lixelsoft.github.io/posts/nodejs-memo/</guid>
-      </item>
-    
-	<item>
-		<title>Firebase CloudFunction Security with Firebase Token</title>
-        
-        
-            <description>&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
-&lt;hr /&gt;
-&lt;p&gt;생각해보니 CloudFunction에 보안을 적용 안해서 개나소나 전부 정보를 획득할수 있었다.&lt;br /&gt;
-이번장에서는 Firebase Token을 이욯해서 검증된 사용자에게만 요청에 대한 응답을 주도록 구현해 보도록 하겠다.&lt;/p&gt;
-</description>
-        
-        <pubDate>Tue, 31 Aug 2021 06:00:00 +0900</pubDate>
-        <link>https://lixelsoft.github.io/posts/firebase-cloudfunction-security/</link>
-        <guid isPermaLink="true">https://lixelsoft.github.io/posts/firebase-cloudfunction-security/</guid>
-      </item>
-    
-	<item>
-		<title>Code Convension</title>
-        
-        
-            <description>&lt;h1 id=&quot;code-convension&quot;&gt;Code Convension&lt;/h1&gt;
-&lt;hr /&gt;
-&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;생각들 정리하는 차원에서 Code Convension 정리하는 글이나 작성해야겠다.&lt;br /&gt;
-앞으로 꾸준히 변경사항이 있으면 Update하도록 하자.&lt;/p&gt;
-</description>
-        
-        <pubDate>Tue, 31 Aug 2021 01:00:00 +0900</pubDate>
-        <link>https://lixelsoft.github.io/posts/unity-memo-copy/</link>
-        <guid isPermaLink="true">https://lixelsoft.github.io/posts/unity-memo-copy/</guid>
-      </item>
-    
-	<item>
-		<title>Firebase CloudFunction 시작하기</title>
-        
-        
-            <description>&lt;h1 id=&quot;install&quot;&gt;Install&lt;/h1&gt;
-&lt;hr /&gt;
-</description>
-        
-        <pubDate>Sun, 29 Aug 2021 01:00:00 +0900</pubDate>
-        <link>https://lixelsoft.github.io/posts/firebase-cloudfunction/</link>
-        <guid isPermaLink="true">https://lixelsoft.github.io/posts/firebase-cloudfunction/</guid>
-      </item>
-    
-	<item>
-		<title>Firebase CloudFunction 앱에서 호출하기</title>
-        
-        
-            <description>&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
-&lt;hr /&gt;
-&lt;ul&gt;
-  &lt;li&gt;기존에는 유니티에서 WebRequest로 구현했었는데 Firebase github를 보다가 라이브러리로도 구현할 수 있는 거 보고 작성하게됨.&lt;/li&gt;
-  &lt;li&gt;❗ 유니티가 아직 AppCheck기능을 지원하지 않아 프로젝트에 적용하지는 않음.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;install&quot;&gt;Install&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;먼저 유니티에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FirebaseFirestore.unitypackage&lt;/code&gt;를 Import해준다.&lt;br /&gt;
-&lt;img src=&quot;https://user-images.githubusercontent.com/56714476/132111976-9d551216-4d8f-4eb9-94f4-797188541c6d.png&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        
-        <pubDate>Sat, 28 Aug 2021 01:00:00 +0900</pubDate>
-        <link>https://lixelsoft.github.io/posts/unity-firebase-cloudfunction/</link>
-        <guid isPermaLink="true">https://lixelsoft.github.io/posts/unity-firebase-cloudfunction/</guid>
       </item>
     
   </channel>

@@ -32,11 +32,12 @@
 <meta property="og:url" content="https://lixelsoft.github.io/page2/" />
 <meta property="og:site_name" content="Lixelsoft" />
 <link rel="prev" href="https://lixelsoft.github.io/" />
+<link rel="next" href="https://lixelsoft.github.io/page3" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Lixelsoft" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"url":"https://lixelsoft.github.io/page2/","headline":"Lixelsoft","author":{"@type":"Person","name":"Lixelsoft"},"description":"Lixelsoft Tech Blog","@type":"WebPage","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Lixelsoft"},"url":"https://lixelsoft.github.io/page2/","headline":"Lixelsoft","description":"Lixelsoft Tech Blog","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -361,6 +362,536 @@
 
 
 <div id="post-list">
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/devlog-20210904/">2021-09-04 Devlog</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        💻 Done List
+
+
+✅ CloudFunction scheduler 구현.
+
+  매일 특정 시간에 유저 전체에게 우편함 주는 함수 구현 완료.
+  Firebase CloudFunction Scheduler 사용.
+
+
+✅ 계정 2개 생성되는 버그
+
+  내부테스트에 새로운 버전 올리면 구글쪽에서 새로 계정을 생성하는듯..
+
+
+✅ IAP 매일 2배 기능...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sat, Sep  4, 2021,  3:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Sep  4
+  
+
+  <i class="unloaded">2021-09-04T03:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="183 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/nodejs-memo/">nodejs aes-128-cbc</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        
+
+Memo
+
+
+
+  
+    const crypto = require("crypto");
+
+const algo = 'aes-128-cbc';
+const key = "keykeykeykeykey";
+const iv = "iviv";
+const value = 'HelloWorld';
+const keyBuffer = new Buffer.from(crypt...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Thu, Sep  2, 2021, 12:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Sep  2
+  
+
+  <i class="unloaded">2021-09-02T00:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="118 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/firebase-cloudfunction-security/">Firebase CloudFunction Security with Firebase Token</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Intro
+
+
+생각해보니 CloudFunction에 보안을 적용 안해서 개나소나 전부 정보를 획득할수 있었다.
+이번장에서는 Firebase Token을 이욯해서 검증된 사용자에게만 요청에 대한 응답을 주도록 구현해 보도록 하겠다.
+
+작성중…
+
+References
+
+
+
+  https://github.com/firebase/functions-samples...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Tue, Aug 31, 2021,  6:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 31
+  
+
+  <i class="unloaded">2021-08-31T06:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="82 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/unity-memo-copy/">Code Convension</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Code Convension
+
+
+Intro
+생각들 정리하는 차원에서 Code Convension 정리하는 글이나 작성해야겠다.
+앞으로 꾸준히 변경사항이 있으면 Update하도록 하자.
+
+
+
+Convension
+
+
+
+  모든 네이밍은 CamelCase
+  this는 사용하지 않는다.
+  Indent는 2칸
+  {}는 개행 없이
+
+
+
+  파일명: 첫 글자...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Tue, Aug 31, 2021,  1:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 31
+  
+
+  <i class="unloaded">2021-08-31T01:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="205 words">1 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/firebase-cloudfunction/">Firebase CloudFunction 시작하기</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Install
+
+
+
+  
+    # firebase cli 설치.
+$ npm install -g firebase-tools
+# 구글 계정으로 로그인.
+$ firebase login
+# 새로운 프로젝트 폴더를 생성하고 해당 폴더로 이동.
+$ mkdir Test &amp;&amp; cd ./Test
+# 해당 프로젝트 폴더에서 firebase initial...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sun, Aug 29, 2021,  1:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 29
+  
+
+  <i class="unloaded">2021-08-29T01:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="668 words">3 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+
+
+  <div class="post-preview">
+    <h1>
+      <a href="/posts/unity-firebase-cloudfunction/">Firebase CloudFunction 앱에서 호출하기</a>
+    </h1>
+
+    <div class="post-content">
+      <p>
+        
+
+
+
+
+
+        Intro
+
+
+
+  기존에는 유니티에서 WebRequest로 구현했었는데 Firebase github를 보다가 라이브러리로도 구현할 수 있는 거 보고 작성하게됨.
+  ❗ 유니티가 아직 AppCheck기능을 지원하지 않아 프로젝트에 적용하지는 않음.
+
+
+Install
+
+  먼저 유니티에 FirebaseFirestore.unitypackage를 Impor...
+      </p>
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago "
+  
+    data-toggle="tooltip"
+    data-placement="bottom"
+    title="Sat, Aug 28, 2021,  1:00 AM +0900"
+  >
+
+  
+  
+
+  
+    Aug 28
+  
+
+  <i class="unloaded">2021-08-28T01:00:00+09:00</i>
+
+</span>
+
+        <!-- time to read -->
+        <i class="far fa-clock fa-fw"></i>
+        <!--
+  Calculate the post's reading time, and display the word count in tooltip
+ -->
+
+
+
+
+
+
+<!-- return element -->
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="366 words">2 min</span>
+
+
+        <!-- page views -->
+        
+      </div>
+
+      
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
 
 
 
@@ -691,92 +1222,6 @@ private void Start() {
 
 
 
-  <div class="post-preview">
-    <h1>
-      <a href="/posts/unity-c-processdiagnostics/">Process 실행 시간 확인</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        
-
-
-
-
-
-        
-  
-    using System.Diagnostics;
-
-namespace lixelsoft {
-  public class Test {
-
-    public void ProcessDiagnostics() {
-      Stopwatch SW = new Stopwatch();
-      SW.Start();
-      float t = 1;
-   ...
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        <!--
-  Date format snippet
-
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago "
-  
-    data-toggle="tooltip"
-    data-placement="bottom"
-    title="Thu, Aug 26, 2021,  5:17 AM +0900"
-  >
-
-  
-  
-
-  
-    Aug 26
-  
-
-  <i class="unloaded">2021-08-26T05:17:00+09:00</i>
-
-</span>
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        <!--
-  Calculate the post's reading time, and display the word count in tooltip
- -->
-
-
-
-
-
-
-<!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="68 words">1 min</span>
-
-
-        <!-- page views -->
-        
-      </div>
-
-      
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-
-
 </div> <!-- #post-list -->
 
 
@@ -838,10 +1283,27 @@ namespace lixelsoft {
 
   
 
+    
+    
+    
+    
+    
+
+    
+
+    
+      <!-- show number -->
+      <li class="page-item ">
+        <a class="page-link btn-box-shadow" href="/page3/">3</a>
+      </li>
+    
+
+  
+
   <!-- right arrow -->
   
-  <li class="page-item disabled">
-    <a class="page-link btn-box-shadow" href="#" aria-label="next-page">
+  <li class="page-item ">
+    <a class="page-link btn-box-shadow" href="/page3" aria-label="next-page">
       <i class="fas fa-angle-right"></i>
     </a>
   </li>
@@ -896,17 +1358,17 @@ namespace lixelsoft {
         
         
         
+        <li><a href="/posts/devlog-20210905/">2021-09-05 Devlog</a></li>
+      
+        
+        
+        
         <li><a href="/posts/firebase-cloudfunction/">Firebase CloudFunction 시작하기</a></li>
       
         
         
         
         <li><a href="/posts/firebase-cloudfunction-security/">Firebase CloudFunction Security with Firebase Token</a></li>
-      
-        
-        
-        
-        <li><a href="/posts/devlog-20210905/">2021-09-05 Devlog</a></li>
       
         
         
@@ -985,62 +1447,6 @@ namespace lixelsoft {
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1100,6 +1506,60 @@ namespace lixelsoft {
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1118,7 +1578,10 @@ namespace lixelsoft {
     
     
     
-      
+  
+    
+    
+    
     
   
     
@@ -1134,15 +1597,6 @@ namespace lixelsoft {
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1157,8 +1611,6 @@ namespace lixelsoft {
     
     
     
-      
-    
   
     
     
@@ -1170,8 +1622,6 @@ namespace lixelsoft {
     
     
     
-    
-      
     
   
     
@@ -1304,10 +1754,10 @@ namespace lixelsoft {
 
       
         
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
+        <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/unity/">unity</a>
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/devlog/">devlog</a>
@@ -1316,10 +1766,10 @@ namespace lixelsoft {
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
       
         
         <a class="post-tag" href="/tags/csharp/">csharp</a>
@@ -1467,62 +1917,6 @@ namespace lixelsoft {
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1582,6 +1976,60 @@ namespace lixelsoft {
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1600,7 +2048,10 @@ namespace lixelsoft {
     
     
     
-      
+  
+    
+    
+    
     
   
     
@@ -1616,15 +2067,6 @@ namespace lixelsoft {
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1639,8 +2081,6 @@ namespace lixelsoft {
     
     
     
-      
-    
   
     
     
@@ -1652,8 +2092,6 @@ namespace lixelsoft {
     
     
     
-    
-      
     
   
     
@@ -1779,12 +2217,12 @@ namespace lixelsoft {
 
 
 
-      
-        
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/unity/">unity</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/devlog/">devlog</a>
@@ -1793,10 +2231,10 @@ namespace lixelsoft {
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
       
         
         <a class="post-tag" href="/tags/csharp/">csharp</a>

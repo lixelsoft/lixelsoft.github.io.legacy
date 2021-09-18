@@ -1,6 +1,96 @@
 [
   
   {
+    "title": "유니티에서 홀딩 버튼 구현하기.",
+    "url": "/posts/unity-ui-holdbutton/",
+    "categories": "Unity, Unity UI",
+    "tags": "unity, c#",
+    "date": "2021-09-16 10:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "IntroIPointerDownHandler, IPointerUpHandlder 인터페이스로 구현하기  public void OnPointerDown(PointerEventData eventData) : 버튼을 클릭/터치하는 순간 실행됨  public void OnPointerUp(PointerEventData eventDate) : 버튼 클릭/터치를 떼는 순간 실행됨아래 스크립트를 버튼이 있는 오브젝트에 추가해주면 해당 스크립트가 작동함. OnPointerDown은 버튼이 눌린 순간 1회만 호출되기 때문에coroutine으로..."
+  },
+  
+  {
+    "title": "맥에서 Unity adb",
+    "url": "/posts/unity-memo-adb/",
+    "categories": "Unity, Unity Memo",
+    "tags": "unity, c#",
+    "date": "2021-09-16 10:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "References"
+  },
+  
+  {
+    "title": "Firebase Analytics Events DebugView",
+    "url": "/posts/unity-firebase-analytics-events/",
+    "categories": "Unity, Unity Firebase",
+    "tags": "unity, firebase, cloudfunction",
+    "date": "2021-09-16 01:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "Intro  Firebase Analytics 이벤트 테스트할 떄 실시간으로 확인하려면 DebugView에서 확인을 해야한다.Install  /Applications/Unity/Hub/Editor/2020.3.16f1/PlaybackEngines/AndroidPlayer/SDK/platform-toolsUsageCloudFunctionReferences"
+  },
+  
+  {
+    "title": "2021-09-09 Devlog",
+    "url": "/posts/devlog-20210909/",
+    "categories": "DevLog, 2021",
+    "tags": "devlog",
+    "date": "2021-09-09 00:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "💻 Done List✅ 광고 보고 아이템 뽑기 기능 버그  Done✅ Version &amp;amp;&amp;amp; Server Down &amp;amp;&amp;amp; IsAbuser 체크 팝업창 구현.  Done✅ Fever Time??  특정 시간대에 친구들 소환시간이나 이동속도를 빠르게 해주기??"
+  },
+  
+  {
+    "title": "2021-09-08 Devlog",
+    "url": "/posts/devlog-20210908/",
+    "categories": "DevLog, 2021",
+    "tags": "devlog",
+    "date": "2021-09-08 00:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "💻 Done List✅ 채팅 Photon -&amp;gt; Firestore로 변경.  생각해보니 Firestore listener 사용하면 채팅도 구현할 수 있을것 같아서 바꿔보기.  그냥 포톤 쓰기로함.✅ 6성 아이템 후광 효과 주기.  하루종일 이것만함… 개빡시네…"
+  },
+  
+  {
+    "title": "2021-09-07 Devlog",
+    "url": "/posts/devlog-20210907/",
+    "categories": "DevLog, 2021",
+    "tags": "devlog",
+    "date": "2021-09-07 00:00:00 +0900",
+    
+
+
+
+
+
+    "snippet": "💻 Done List✅ 채팅 Photon -&amp;gt; Firestore로 변경.  생각해보니 Firestore listener 사용하면 채팅도 구현할 수 있을것 같아서 바꿔보기.✅ 실시간 리더보드 기능 구현.  Firestore Listener사용해서 실시간 리더보드 구현."
+  },
+  
+  {
     "title": "2021-09-06 Devlog",
     "url": "/posts/devlog-20210906/",
     "categories": "DevLog, 2021",
@@ -12,7 +102,7 @@
 
 
 
-    "snippet": "💻 Done List✅ 데이터 변경 시 Firestore Listen으로 기능 구현  메모리 해킹을 방지하기 위해서 기존에 구현되어 있던 방식을 변경."
+    "snippet": "💻 Done List✅ Firestore Data Format 변경  Listen으로 구현하려다 보니 지금 구조가 너무 복잡함.  좀더 단순하게 구조를 변경.  개빡심;;;✅ 데이터 변경 시 Firestore Listen으로 기능 구현  메모리 해킹을 방지하기 위해서 기존에 구현되어 있던 방식을 변경."
   },
   
   {

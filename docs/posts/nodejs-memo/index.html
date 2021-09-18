@@ -37,7 +37,7 @@
 <meta property="twitter:title" content="nodejs aes-128-cbc" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"url":"https://lixelsoft.github.io/posts/nodejs-memo/","headline":"nodejs aes-128-cbc","datePublished":"2021-09-02T00:00:00+09:00","dateModified":"2021-09-02T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/nodejs-memo/"},"author":{"@type":"Person","name":"Lixelsoft"},"description":"Lixelsoft Tech Blog","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Lixelsoft"},"url":"https://lixelsoft.github.io/posts/nodejs-memo/","headline":"nodejs aes-128-cbc","dateModified":"2021-09-02T00:00:00+09:00","datePublished":"2021-09-02T00:00:00+09:00","description":"Lixelsoft Tech Blog","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://lixelsoft.github.io/posts/nodejs-memo/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -621,17 +621,17 @@
         
         
         
+        <li><a href="/posts/devlog-20210905/">2021-09-05 Devlog</a></li>
+      
+        
+        
+        
         <li><a href="/posts/firebase-cloudfunction/">Firebase CloudFunction 시작하기</a></li>
       
         
         
         
         <li><a href="/posts/firebase-cloudfunction-security/">Firebase CloudFunction Security with Firebase Token</a></li>
-      
-        
-        
-        
-        <li><a href="/posts/devlog-20210905/">2021-09-05 Devlog</a></li>
       
         
         
@@ -710,62 +710,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -825,6 +769,60 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -843,7 +841,10 @@
     
     
     
-      
+  
+    
+    
+    
     
   
     
@@ -859,15 +860,6 @@
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -882,8 +874,6 @@
     
     
     
-      
-    
   
     
     
@@ -895,8 +885,6 @@
     
     
     
-    
-      
     
   
     
@@ -1029,10 +1017,10 @@
 
       
         
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
+        <a class="post-tag" href="/tags/unity/">unity</a>
       
         
-        <a class="post-tag" href="/tags/unity/">unity</a>
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/devlog/">devlog</a>
@@ -1041,10 +1029,10 @@
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
       
         
         <a class="post-tag" href="/tags/csharp/">csharp</a>
@@ -1098,6 +1086,84 @@
 
 
 
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
   
@@ -1338,7 +1404,7 @@
       
       
       <div class="card">
-        <a href="/posts/devlog-20210906/">
+        <a href="/posts/unity-ui-holdbutton/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1355,13 +1421,13 @@
   
 
   
-    Sep  6
+    Sep 16
   
 
-  <i class="unloaded">2021-09-06T00:00:00+09:00</i>
+  <i class="unloaded">2021-09-16T10:00:00+09:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>2021-09-06 Devlog</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>유니티에서 홀딩 버튼 구현하기.</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1370,12 +1436,53 @@
 
 
 
-                💻 Done List
+                Intro
+IPointerDownHandler, IPointerUpHandlder 인터페이스로 구현하기
+
+  public void OnPointerDown(PointerEventData eventData) : 버튼을 클릭/터치하는 순간 실행됨
+  public void OnPointerUp(PointerEventData eventDate) : 버튼 클릭...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
+      
+      
+      <div class="card">
+        <a href="/posts/unity-memo-adb/">
+          <div class="card-body">
+            <!--
+  Date format snippet
+
+  v2.4.1
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2020 Cotes Chung
+  MIT License
+-->
+<span class="timeago small"
+  >
+
+  
+  
+
+  
+    Sep 16
+  
+
+  <i class="unloaded">2021-09-16T10:00:00+09:00</i>
+
+</span>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>맥에서 Unity adb</h3>
+            <div class="text-muted small">
+              <p>
+                
 
 
-✅ 데이터 변경 시 Firestore Listen으로 기능 구현
 
-  메모리 해킹을 방지하기 위해서 기존에 구현되어 있던 방식을 변경.
+
+
+                References
 
 
               </p>
@@ -1387,7 +1494,7 @@
       
       
       <div class="card">
-        <a href="/posts/firebase-cloudfunction-security-appcheck/">
+        <a href="/posts/unity-firebase-analytics-events/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1404,13 +1511,13 @@
   
 
   
-    Sep  5
+    Sep 16
   
 
-  <i class="unloaded">2021-09-05T06:00:00+09:00</i>
+  <i class="unloaded">2021-09-16T01:00:00+09:00</i>
 
 </span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase CloudFunction Security with AppCheck</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Firebase Analytics Events DebugView</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1421,75 +1528,18 @@
 
                 Intro
 
-이번에 새로 발표한 AppCheck기능을 사용해서 CloudFunction 호출의 보안을 강화할 수 있다.
-유니티는 아직 지원 안함…
+
+  Firebase Analytics 이벤트 테스트할 떄 실시간으로 확인하려면 DebugView에서 확인을 해야한다.
 
 
+Install
 
-References
-
-
-  https://stackoverflow.com/questions/68043694/firebase-realtime-database-unity
+  /Applications/Unity/Hub/Editor/2020.3.16f1/PlaybackEngines/AndroidPlayer/SDK/platform-tools
 
 
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    
-      
-      
-      <div class="card">
-        <a href="/posts/devlog-20210905/">
-          <div class="card-body">
-            <!--
-  Date format snippet
+Usage
 
-  v2.4.1
-  https://github.com/cotes2020/jekyll-theme-chirpy
-  © 2020 Cotes Chung
-  MIT License
--->
-<span class="timeago small"
-  >
-
-  
-  
-
-  
-    Sep  5
-  
-
-  <i class="unloaded">2021-09-05T00:00:00+09:00</i>
-
-</span>
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>2021-09-05 Devlog</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                💻 Done List
-
-
-✅ 패키지 상품 구현
-
-  
-
-
-✅ 유니티 Firebase CloudFunction 호출 구현
-
-  기존에는 WebRequest로 구현되어 있는데 이부분을 라이브러리 호출로 변경.
-  AppCheck가 유니티 지원 안해서 보류.
-
-
-✅ Unity UPM 제거
-
-  구글이 5월부터 UPM 지원을 안한다고 한 것을 이제 알았네… ...
+CloudFunc...
               </p>
             </div>
           </div>
@@ -1652,62 +1702,6 @@ References
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1767,6 +1761,60 @@ References
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1785,7 +1833,10 @@ References
     
     
     
-      
+  
+    
+    
+    
     
   
     
@@ -1801,15 +1852,6 @@ References
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1824,8 +1866,6 @@ References
     
     
     
-      
-    
   
     
     
@@ -1837,8 +1877,6 @@ References
     
     
     
-    
-      
     
   
     
@@ -1964,12 +2002,12 @@ References
 
 
 
-      
-        
-        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/unity/">unity</a>
+      
+        
+        <a class="post-tag" href="/tags/firebase/">firebase</a>
       
         
         <a class="post-tag" href="/tags/devlog/">devlog</a>
@@ -1978,10 +2016,10 @@ References
         <a class="post-tag" href="/tags/c/">c#</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
+        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
       
         
-        <a class="post-tag" href="/tags/cloudfunction/">cloudfunction</a>
+        <a class="post-tag" href="/tags/cloudfunctio-security/">cloudfunctio security</a>
       
         
         <a class="post-tag" href="/tags/csharp/">csharp</a>
